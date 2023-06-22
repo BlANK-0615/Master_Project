@@ -1,0 +1,36 @@
+#! /usr/bin/python3
+# Author Puxin Luo
+# Date 2021-5-20
+
+# import modules
+import os
+import subprocess
+import pandas as pd
+import re
+
+df = pd.read_csv('A_Project1/Tocodecoy/actives_decoys.csv', sep=",",dtype={'PDBCode':str})
+df.shape
+#Index(['name', 'smile', 'mw', 'logp', 'rb', 'hba', 'hbr', 'halx', 'similarity','label'],dtype='object')
+df['label'].value_counts()
+df=pd.read_csv('2_propterties_filter/actives_decoys_r25_0605_test1.csv',sep=',', encoding='ISO-8859-1')
+
+
+# 读取CSV文件
+
+# 提取active分子和诱饵分子的前四个字母
+df['active_name'] = df['name'].str[:4]
+#df['decoy_prefix'] = df['decoy'].str[:4]
+
+# 统计每个active分子对应的诱饵数量
+active_counts = df.groupby('active_name').count()
+
+# 打印每个active分子对应的诱饵数量
+for prefix, count in counts.items():
+    print(f'Active molecule with prefix {prefix} generated {count} decoy molecules.')
+
+
+#cd=5102*51-256678=3524,缺了3524个deocy。
+lack=3524/51
+lack
+# 70个完全没生成，但现实是28个完全没生成，剩下80多个生成数不够
+
