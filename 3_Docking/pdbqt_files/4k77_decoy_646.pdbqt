@@ -1,0 +1,41 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  O1_5 
+REMARK    2  A    between atoms: O1_5  and  C5_6 
+REMARK    3  A    between atoms: C5_6  and  O3_8 
+REMARK    4  A    between atoms: O3_8  and  C6_9 
+REMARK    5  A    between atoms: C8_11  and  C9_12 
+REMARK    6  A    between atoms: C10_13  and  C11_14 
+ROOT
+HETATM    1  C6  UNL     1       1.036  -0.229   1.328  1.00  0.00     0.196 A 
+HETATM    2  C7  UNL     1       2.021   0.259   0.508  1.00  0.00     0.078 A 
+HETATM    3  C8  UNL     1       3.046  -0.648   0.535  1.00  0.00    -0.009 A 
+HETATM    4  C12 UNL     1       2.633  -1.666   1.385  1.00  0.00     0.156 A 
+HETATM    5  O6  UNL     1       1.455  -1.368   1.818  1.00  0.00    -0.299 OA
+ENDROOT
+BRANCH   1   6
+HETATM    6  O3  UNL     1      -0.178   0.396   1.576  1.00  0.00    -0.231 OA
+BRANCH   6   7
+HETATM    7  C5  UNL     1      -1.257   0.109   0.750  1.00  0.00     0.414 C 
+HETATM    8  O2  UNL     1      -1.149  -0.707  -0.213  1.00  0.00    -0.229 OA
+BRANCH   7   9
+HETATM    9  O1  UNL     1      -2.508   0.684   0.920  1.00  0.00    -0.288 OA
+BRANCH   9  10
+HETATM   10  C2  UNL     1      -3.606   0.404   0.095  1.00  0.00     0.062 C 
+HETATM   11  C1  UNL     1      -3.983  -1.071   0.117  1.00  0.00     0.046 C 
+HETATM   12  C3  UNL     1      -3.393   0.787  -1.333  1.00  0.00     0.046 C 
+HETATM   13  C4  UNL     1      -4.805   1.143   0.702  1.00  0.00     0.046 C 
+ENDBRANCH   9  10
+ENDBRANCH   7   9
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   3  14
+HETATM   14  C9  UNL     1       4.292  -0.552  -0.178  1.00  0.00     0.020 C 
+HETATM   15  C10 UNL     1       4.535   0.484  -0.950  1.00  0.00     0.085 C 
+BRANCH  15  16
+HETATM   16  C11 UNL     1       5.782   0.614  -1.685  1.00  0.00     0.198 C 
+HETATM   17  O4  UNL     1       6.004   1.595  -2.413  1.00  0.00    -0.645 OA
+HETATM   18  O5  UNL     1       6.771  -0.374  -1.589  1.00  0.00    -0.645 OA
+ENDBRANCH  15  16
+ENDBRANCH   3  14
+TORSDOF 6

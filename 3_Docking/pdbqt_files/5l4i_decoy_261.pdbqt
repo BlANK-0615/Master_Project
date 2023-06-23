@@ -1,0 +1,35 @@
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C5_5  and  N1_6 
+REMARK    2  A    between atoms: N2_8  and  C6_10 
+REMARK    3  A    between atoms: C9_16  and  C10_17 
+ROOT
+HETATM    1  N1  UNL     1       0.165  -0.319  -0.413  1.00  0.00    -0.326 N 
+ATOM      2  H1  UNL     1       0.460   0.177  -1.254  1.00  0.00     0.181 HD
+HETATM    3  N2  UNL     1       1.049  -0.774   0.336  1.00  0.00    -0.302 N 
+ATOM      4  H2  UNL     1       0.736  -1.266   1.173  1.00  0.00     0.186 HD
+ENDROOT
+BRANCH   3   5
+HETATM    5  C6  UNL     1       2.440  -0.675   0.139  1.00  0.00     0.082 A 
+HETATM    6  C7  UNL     1       3.258  -1.681  -0.301  1.00  0.00     0.075 A 
+HETATM    7  C8  UNL     1       4.550  -1.207  -0.366  1.00  0.00     0.106 A 
+HETATM    8 CL1  UNL     1       6.005  -2.070  -0.867  1.00  0.00    -0.064 Cl
+HETATM    9  N3  UNL     1       4.531   0.078   0.029  1.00  0.00    -0.341 N 
+HETATM   10  C9  UNL     1       3.251   0.416   0.340  1.00  0.00     0.127 A 
+ATOM     11  H3  UNL     1       5.341   0.696   0.086  1.00  0.00     0.167 HD
+BRANCH  10  12
+HETATM   12  C10 UNL     1       2.808   1.716   0.809  1.00  0.00     0.283 C 
+HETATM   13  N4  UNL     1       3.783   2.739   0.962  1.00  0.00    -0.056 NA
+HETATM   14  O1  UNL     1       1.591   1.900   1.063  1.00  0.00    -0.269 OA
+ENDBRANCH  10  12
+ENDBRANCH   3   5
+BRANCH   1  15
+HETATM   15  C5  UNL     1      -1.185  -0.443  -0.177  1.00  0.00     0.047 C 
+HETATM   16  C4  UNL     1      -1.729  -1.544   0.688  1.00  0.00     0.033 C 
+HETATM   17  C3  UNL     1      -3.231  -1.200   0.599  1.00  0.00     0.012 C 
+HETATM   18  C2  UNL     1      -3.153   0.036  -0.231  1.00  0.00    -0.039 C 
+HETATM   19  C1  UNL     1      -4.320   0.796  -0.586  1.00  0.00     0.015 C 
+HETATM   20  C11 UNL     1      -2.167  -0.369  -1.335  1.00  0.00     0.041 C 
+HETATM   21  C12 UNL     1      -1.950   0.766   0.381  1.00  0.00     0.041 C 
+ENDBRANCH   1  15
+TORSDOF 3

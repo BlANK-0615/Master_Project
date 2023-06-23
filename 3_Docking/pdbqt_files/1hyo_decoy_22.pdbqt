@@ -1,0 +1,42 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_1  and  C1_5 
+REMARK    2  A    between atoms: C1_5  and  C2_6 
+REMARK    3  A    between atoms: C1_5  and  C5_13 
+REMARK    4  A    between atoms: C5_13  and  O1_14 
+REMARK    5  A    between atoms: C5_13  and  C6_16 
+REMARK    6  A    between atoms: C6_16  and  N4_17 
+ROOT
+HETATM    1  C1  UNL     1      -0.841  -0.445  -1.023  1.00  0.00     0.249 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  N1  UNL     1      -0.176  -1.706  -0.839  1.00  0.00    -0.068 N 
+ATOM      3  H13 UNL     1       0.224  -1.774   0.097  1.00  0.00     0.275 HD
+ATOM      4  H12 UNL     1      -0.851  -2.469  -0.788  1.00  0.00     0.275 HD
+ATOM      5  H11 UNL     1       0.530  -1.892  -1.551  1.00  0.00     0.275 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+HETATM    6  C2  UNL     1      -1.865  -0.176   0.009  1.00  0.00     0.008 A 
+HETATM    7  C3  UNL     1      -3.147   0.332  -0.231  1.00  0.00     0.117 A 
+HETATM    8  N2  UNL     1      -3.762   0.430   0.936  1.00  0.00    -0.312 N 
+HETATM    9  N3  UNL     1      -2.963   0.020   1.905  1.00  0.00    -0.312 N 
+ATOM     10  H2  UNL     1      -4.714   0.772   1.068  1.00  0.00     0.186 HD
+HETATM   11  C4  UNL     1      -1.793  -0.358   1.366  1.00  0.00     0.117 A 
+ATOM     12  H3  UNL     1      -3.196  -0.005   2.898  1.00  0.00     0.186 HD
+ENDBRANCH   1   6
+BRANCH   1  13
+HETATM   13  C5  UNL     1       0.077   0.716  -1.174  1.00  0.00     0.181 C 
+BRANCH  13  14
+HETATM   14  O1  UNL     1       0.924   0.568  -2.288  1.00  0.00    -0.391 OA
+ATOM     15  H1  UNL     1       1.510   1.309  -2.384  1.00  0.00     0.210 HD
+ENDBRANCH  13  14
+BRANCH  13  16
+HETATM   16  C6  UNL     1       0.917   0.982   0.047  1.00  0.00     0.306 C 
+BRANCH  16  17
+HETATM   17  N4  UNL     1       1.797  -0.138   0.233  1.00  0.00     0.094 N 
+HETATM   18  C7  UNL     1       2.724  -0.168   1.329  1.00  0.00     0.302 A 
+HETATM   19  C8  UNL     1       3.259   0.147   0.025  1.00  0.00     0.302 A 
+ENDBRANCH  16  17
+ENDBRANCH  13  16
+ENDBRANCH   1  13
+TORSDOF 6

@@ -1,0 +1,40 @@
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N2_4  and  N3_6 
+REMARK    2  A    between atoms: C1_8  and  N4_9 
+REMARK    3  A    between atoms: N4_9  and  C2_11 
+REMARK    4  A    between atoms: C2_11  and  C3_12 
+REMARK    5  A    between atoms: C3_12  and  N5_13 
+ROOT
+HETATM    1  N4  UNL     1       2.356  -1.332  -0.432  1.00  0.00    -0.384 N 
+ATOM      2  H4  UNL     1       2.635  -2.252  -0.773  1.00  0.00     0.160 HD
+ENDROOT
+BRANCH   1   3
+HETATM    3  C1  UNL     1       3.279  -0.590   0.332  1.00  0.00     0.194 C 
+HETATM    4  N3  UNL     1       4.062   0.275  -0.211  1.00  0.00    -0.283 N 
+ATOM      5  H3  UNL     1       4.001   0.415  -1.220  1.00  0.00     0.189 HD
+BRANCH   4   6
+HETATM    6  N2  UNL     1       4.986   1.029   0.502  1.00  0.00    -0.248 N 
+HETATM    7  N1  UNL     1       5.721   1.866  -0.083  1.00  0.00    -0.331 N 
+ATOM      8  H12 UNL     1       5.625   1.980  -1.092  1.00  0.00     0.178 HD
+ATOM      9  H11 UNL     1       6.399   2.420   0.440  1.00  0.00     0.178 HD
+ATOM     10  H2  UNL     1       5.069   0.903   1.511  1.00  0.00     0.207 HD
+ENDBRANCH   4   6
+ENDBRANCH   1   3
+BRANCH   1  11
+HETATM   11  C2  UNL     1       1.022  -0.846  -0.758  1.00  0.00     0.140 C 
+BRANCH  11  12
+HETATM   12  C3  UNL     1       0.223  -0.791   0.505  1.00  0.00     0.147 C 
+BRANCH  12  13
+HETATM   13  N5  UNL     1      -1.113  -0.336   0.357  1.00  0.00    -0.333 N 
+HETATM   14  C4  UNL     1      -1.350   1.097   0.486  1.00  0.00     0.129 C 
+HETATM   15  C5  UNL     1      -2.769   1.468   0.166  1.00  0.00     0.040 C 
+HETATM   16  C6  UNL     1      -3.351   0.665  -0.967  1.00  0.00     0.126 C 
+HETATM   17  N6  UNL     1      -3.333  -0.742  -0.614  1.00  0.00    -0.343 N 
+HETATM   18  C7  UNL     1      -2.196  -1.206   0.097  1.00  0.00     0.318 C 
+ATOM     19  H6  UNL     1      -4.099  -1.367  -0.864  1.00  0.00     0.164 HD
+HETATM   20  O1  UNL     1      -2.148  -2.372   0.491  1.00  0.00    -0.247 OA
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 5
