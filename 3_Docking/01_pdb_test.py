@@ -9,9 +9,11 @@ from rdkit.Chem import AllChem
 #m1 = Chem.MolFromSmiles("C[S+](=O)(C)C=C(NC1=CC(=C(C=C1)Cl)Cl)[O-]") charge type
 #m1 = Chem.MolFromSmiles("CS(C)(C)=O") atmo type
 
-m1 = Chem.MolFromSmiles("CCCCCCCCC(=NCCCCNC(=N)N)N1CCN(C(=O)C(N)C2CCNCC2)CC1")
+m1 = Chem.MolFromSmiles("CCCCCC(=O)OCCC1CN(C(=O)C=CC2(C)C34CCC(C)(C3)C2(C)CC4)CCO1")
 m1_H= Chem.AddHs(m1)
-check = AllChem.EmbedMolecule(m1_H,useRandomCoords=True)
+ps = AllChem.ETKDGv2()
+ps.useRandomCoords = True
+check = AllChem.EmbedMolecule(m1_H,ps)
 if check != 0:
                 print(f"Embedding faild")
 #Draw.MolToFile(m1, 'test.png')

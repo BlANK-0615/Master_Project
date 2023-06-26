@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-folder_path = '/home/s2331261/Master_Project/3_Docking/pdb_files'  # 替换为你的文件夹路径
+folder_path = '/home/s2331261/Master_Project/3_Docking/broken_pdb_files'  # 替换为你的文件夹路径
 
 # 获取文件夹中的所有文件名
 file_names = os.listdir(folder_path)
@@ -13,6 +13,6 @@ file_names = [name.replace('_decoy', '').split('.')[0] for name in file_names]
 df = pd.DataFrame({'name': file_names})
 
 # 保存到 CSV 文件
-df.to_csv('pdb_deocy_02.csv', index=False)
+df.to_csv('pdb_broken_deocy_01.csv', index=False)
 
 # ls -l | grep "^-" | wc -l
