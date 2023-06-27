@@ -1,4 +1,3 @@
- 
 import os
 from rdkit import Chem, rdBase, RDLogger
 from rdkit.Chem import AllChem
@@ -9,7 +8,7 @@ from rdkit.Chem import AllChem
 #m1 = Chem.MolFromSmiles("C[S+](=O)(C)C=C(NC1=CC(=C(C=C1)Cl)Cl)[O-]") charge type
 #m1 = Chem.MolFromSmiles("CS(C)(C)=O") atmo type
 
-m1 = Chem.MolFromSmiles("CCCCCC(=O)OCCC1CN(C(=O)C=CC2(C)C34CCC(C)(C3)C2(C)CC4)CCO1")
+m1 = Chem.MolFromSmiles("COc1ccc(OC)c(ONC(=O)N2CC[C@@H](NCCCN3C4=C[C@@]56=C[SH]457[C@@H]6C37=O)C3(C2)OCCO3)c1")
 m1_H= Chem.AddHs(m1)
 ps = AllChem.ETKDGv2()
 ps.useRandomCoords = True

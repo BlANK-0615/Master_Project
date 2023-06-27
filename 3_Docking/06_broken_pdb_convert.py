@@ -8,9 +8,9 @@ import timeit
 
 
 
-df = pd.read_csv('/home/s2331261/Master_Project/3_Docking/a4_results_files/y1_broken_deocy_emb.csv', sep=",")
+df = pd.read_csv('/home/s2331261/Master_Project/3_Docking/a8_broken_deocy.csv', sep=",")
 
-os.makedirs('broken_pdb_files_03', exist_ok=True)
+os.makedirs('a9_files', exist_ok=True)
 
 # 创建一个空的DataFrame来存储错误信息
 # error_df = pd.DataFrame(columns=['name', 'smile', 'error'])
@@ -30,24 +30,24 @@ def convert_smiles_to_pdb(row):
         check = AllChem.EmbedMolecule(decoy_H, ps)
         if check != 0:
             print(f"Embedding failed at index {Name}: {Smile}")
-            with open('Broken_Decoy_03.txt', 'a') as f:
+            with open('a9_broken.txt', 'a') as f:
                 f.write(f"Embedding failed at index {Name}: {Smile}\n")
             # error_df.loc[len(error_df)] = [Name, Smile, "Embedding failed"]
         else:
             decoy = Chem.RemoveHs(decoy_H)
-            Chem.MolToPDBFile(decoy, f'./broken_pdb_files_02/{new_name}.pdb')
-            with open('Correct_Decoy_03.txt', 'a') as f:
+            Chem.MolToPDBFile(decoy, f'./a9_files/{new_name}.pdb')
+            with open('a9_cottected.txt', 'a') as f:
                 f.write(f"Corrected decoy at index {Name}: {Smile}\n")
             # pdb_list_df.loc[len(pdb_list_df)] = [Name, Smile,f'{new_name}.pdb']
     else:
         print(f"Invalid SMILES string at index {Name}: {Smile}")
-        with open('Broken_Decoy_03.txt', 'a') as f:
+        with open('a9_broken.txt', 'a') as f:
             f.write(f"Invalid SMILES string at index {Name}: {Smile}\n")
         # error_df.loc[len(error_df)] = [Name, Smile, "Invalid SMILES string"]
 
 # use joblib to run the conversions in parallel
 start=timeit.default_timer()
-Parallel(n_jobs=-1)(delayed(convert_smiles_to_pdb)(row) for i, row in tqdm(df.iterrows(), total=df.shape[0]))
+Parallel(n_jobs=30)(delayed(convert_smiles_to_pdb)(row) for i, row in tqdm(df.iterrows(), total=df.shape[0]))
 end=timeit.default_timer()
 print('Running time: %s Seconds'%(end-start))
 
