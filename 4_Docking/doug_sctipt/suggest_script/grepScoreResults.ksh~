@@ -1,0 +1,15 @@
+#!/usr/people/douglas/programs/ksh.exe
+
+rm -f *_scores.txt
+set -A score
+for dir in $(< dirlist.txt); do
+  print "dir is $dir"
+  for file in gwovina psovina2 quickvina2 quickvinaw vina112; do
+    score[$file]=$(head -2 ${dir}/${dir}_ligand_out_${file}.pdbqt | tail -1 | awk '{print $4}')
+    print -- $dir ${score[$file]} >> ${file}_scores.txt
+  done
+done
+
+for file in gwovina psovina2 quickvina2 quickvinaw vina112; do
+   sort -n --key=2,2 ${file}_scores.txt > ${file}_scores_sorted.txt
+done 
