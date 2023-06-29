@@ -37,8 +37,7 @@ def get_coordinates(file, padding): # file is the crystal ligand file
 def dock_file(docker_command, protein_filepath, ligand_filepath, center_x, center_y, center_z, size_x, size_y, size_z): # protein_filepath is the receptor file, ligand_filepath is the decoy file
     os.system(f'{docker_command} --receptor {protein_filepath} --ligand {ligand_filepath}  --center_x  {center_x} --center_y {center_y} --center_z {center_z} --size_x  {size_x} --size_y {size_y}  --size_z {size_z}' \
               ' --exhaustiveness=32 --num_wolves=40 --num_modes=5 --energy_range=4')
-  
-    
+
 def dock_decoy(decoy_file, docker_command, receptor_folder, docked_folder, padding):
     filename = os.path.basename(decoy_file)
     pdb_code = filename.split('_')[0]
@@ -49,16 +48,16 @@ def dock_decoy(decoy_file, docker_command, receptor_folder, docked_folder, paddi
         # compute coordinates
         coordinates = get_coordinates(example_crystal_ligand, padding)
         print(coordinates)
-        with open("Toco_01_bind_site.txt", "a") as bind_site_file:
-            coordinates_str = ' '.join(map(str, coordinates))  # convert tuple elements to str and join with space
-            bind_site_file.write(f"{filename} {coordinates_str}\n")  # use f-string
+        # with open("bind_site_test.txt", "a") as bind_site_file:
+        #     coordinates_str = ' '.join(map(str, coordinates))  # convert tuple elements to str and join with space
+        #     bind_site_file.write(f"{filename} {coordinates_str}\n")  # use f-string
 
         # perform docking
         dock_file(docker_command, receptor_file, decoy_file, *coordinates)
         os.makedirs(docked_folder, exist_ok=True)
         origin_path = decoy_file.split('.')[0]
         shutil.move(f"{origin_path}_out.pdbqt", docked_folder)
-        with open("Toco_01_progess_rate_.txt", "a") as progress_file:
+        with open("progess_rate_02.txt", "a") as progress_file:
             progress_file.write(f"{filename} docking finished\n")
         # shutil.copy(receptor_file, os.path.join(docked_folder, f"{pdb_code}_docked"))
         
@@ -88,9 +87,9 @@ def dock_decoy(decoy_file, docker_command, receptor_folder, docked_folder, paddi
 start=timeit.default_timer()
 
 docker_command = "/home/s2331261/Master_Project/3_Docking/SCORCH/utils/gwovina-1.0/build/linux/release/gwovina"
-receptor_folder = "/home/s2331261/Master_Project/z1_3p_dataset/dock_source/all_receptors_ligands"
-decoy_folder = "/home/s2331261/Master_Project/3_Docking/decoy_qdbqt_01"
-docked_folder = "Toco_docked_01"
+receptor_folder = "/home/s2331261/Master_Project/3p_dataset/dock_source/all_receptors_ligands"
+decoy_folder = "/home/s2331261/Master_Project/3_Docking/final_test_02"
+docked_folder = "final_test_02"
 padding = 12
 decoy_files = [os.path.join(decoy_folder, file) for file in os.listdir(decoy_folder)]
 # generate a list of all decoy files
