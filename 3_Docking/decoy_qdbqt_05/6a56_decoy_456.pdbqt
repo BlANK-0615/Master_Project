@@ -1,0 +1,74 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C3_4 
+REMARK    2  A    between atoms: C3_4  and  O1_5 
+REMARK    3  A    between atoms: C6_14  and  O2_15 
+REMARK    4  A    between atoms: C7_17  and  O3_18 
+REMARK    5  A    between atoms: C7_17  and  C8_20 
+REMARK       I    between atoms: C8_20  and  N5_22 
+REMARK    6  A    between atoms: N5_22  and  N6_24 
+REMARK       I    between atoms: N6_24  and  C9_26 
+REMARK    7  A    between atoms: C9_26  and  C10_28 
+REMARK    8  A    between atoms: C10_28  and  N7_29 
+REMARK    9  A    between atoms: C10_28  and  C11_33 
+REMARK   10  A    between atoms: C11_33  and  N8_34 
+ROOT
+HETATM    1  C3  UNL     1      -2.283   0.076   0.526  1.00  0.00     0.236 A 
+HETATM    2  C4  UNL     1      -3.289   1.189   1.055  1.00  0.00     0.153 A 
+HETATM    3  N2  UNL     1      -4.088   2.221   1.411  1.00  0.00    -0.357 N 
+ATOM      4  H2  UNL     1      -4.802   2.226   2.139  1.00  0.00     0.162 HD
+HETATM    5  C5  UNL     1      -3.711   3.334   0.528  1.00  0.00     0.268 A 
+HETATM    6  N3  UNL     1      -2.748   2.855  -0.242  1.00  0.00    -0.276 N 
+HETATM    7  N4  UNL     1      -2.800   1.841   0.265  1.00  0.00    -0.283 N 
+ATOM      8  H4  UNL     1      -2.097   1.259  -0.190  1.00  0.00     0.188 HD
+HETATM    9  C6  UNL     1      -1.645   2.256  -1.100  1.00  0.00     0.287 A 
+HETATM   10  C7  UNL     1      -1.499   0.778  -0.643  1.00  0.00     0.243 A 
+ENDROOT
+BRANCH  10  11
+HETATM   11  O3  UNL     1      -1.760  -0.011  -1.759  1.00  0.00    -0.372 OA
+ATOM     12  H3  UNL     1      -1.286   0.413  -2.465  1.00  0.00     0.211 HD
+ENDBRANCH  10  11
+BRANCH  10  13
+HETATM   13  C8  UNL     1      -0.031   0.629  -0.354  1.00  0.00     0.281 C 
+HETATM   14  O4  UNL     1       0.429   1.229   0.650  1.00  0.00    -0.268 OA
+HETATM   15  N5  UNL     1       0.827  -0.155  -1.168  1.00  0.00    -0.265 N 
+ATOM     16  H5  UNL     1       0.417  -0.626  -1.974  1.00  0.00     0.190 HD
+BRANCH  15  17
+HETATM   17  N6  UNL     1       2.178  -0.324  -0.944  1.00  0.00    -0.266 N 
+HETATM   18  C9  UNL     1       2.707  -0.921   0.235  1.00  0.00     0.268 C 
+HETATM   19  O5  UNL     1       1.894  -1.314   1.122  1.00  0.00    -0.269 OA
+ATOM     20  H6  UNL     1       2.831  -0.005  -1.660  1.00  0.00     0.190 HD
+BRANCH  18  21
+HETATM   21  C10 UNL     1       4.144  -1.097   0.457  1.00  0.00     0.301 C 
+BRANCH  21  22
+HETATM   22  N7  UNL     1       4.394  -1.717   1.739  1.00  0.00    -0.065 N 
+ATOM     23  H73 UNL     1       3.955  -1.199   2.500  1.00  0.00     0.275 HD
+ATOM     24  H72 UNL     1       3.886  -2.596   1.838  1.00  0.00     0.275 HD
+ATOM     25  H71 UNL     1       5.395  -1.840   1.894  1.00  0.00     0.275 HD
+ENDBRANCH  21  22
+BRANCH  21  26
+HETATM   26  C11 UNL     1       4.949   0.173   0.347  1.00  0.00     0.272 C 
+BRANCH  26  27
+HETATM   27  N8  UNL     1       6.355  -0.116   0.587  1.00  0.00    -0.077 N 
+ATOM     28  H83 UNL     1       6.503  -0.589   1.478  1.00  0.00     0.274 HD
+ATOM     29  H82 UNL     1       6.707  -0.849  -0.029  1.00  0.00     0.274 HD
+ATOM     30  H81 UNL     1       6.900   0.743   0.513  1.00  0.00     0.274 HD
+ENDBRANCH  26  27
+ENDBRANCH  21  26
+ENDBRANCH  18  21
+ENDBRANCH  15  17
+ENDBRANCH  10  13
+BRANCH   1  31
+HETATM   31  N1  UNL     1      -3.010  -1.033   0.125  1.00  0.00    -0.382 N 
+HETATM   32  C1  UNL     1      -4.053  -0.994  -0.784  1.00  0.00     0.146 C 
+HETATM   33  C2  UNL     1      -2.520  -2.340   0.392  1.00  0.00     0.146 C 
+ENDBRANCH   1  31
+BRANCH   1  34
+HETATM   34  O1  UNL     1      -1.422  -0.255   1.556  1.00  0.00    -0.362 OA
+ATOM     35  H1  UNL     1      -0.923   0.505   1.831  1.00  0.00     0.213 HD
+ENDBRANCH   1  34
+BRANCH   9  36
+HETATM   36  O2  UNL     1      -2.156   2.288  -2.369  1.00  0.00    -0.371 OA
+ATOM     37  H2  UNL     1      -1.467   1.914  -2.905  1.00  0.00     0.212 HD
+ENDBRANCH   9  36
+TORSDOF 10

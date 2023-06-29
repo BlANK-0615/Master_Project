@@ -1,0 +1,74 @@
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C1_2  and  C2_3 
+REMARK    2  A    between atoms: C1_2  and  C12_23 
+REMARK    3  A    between atoms: C2_3  and  N1_4 
+REMARK       I    between atoms: N1_4  and  C3_6 
+REMARK    4  A    between atoms: C3_6  and  C4_8 
+REMARK    5  A    between atoms: C4_8  and  O3_9 
+REMARK       I    between atoms: N2_13  and  C7_14 
+REMARK    6  A    between atoms: C7_14  and  C8_16 
+REMARK    7  A    between atoms: C8_16  and  C9_17 
+REMARK    8  A    between atoms: C12_23  and  O5_25 
+REMARK    9  A    between atoms: O5_25  and  C13_26 
+REMARK   10  A    between atoms: C13_26  and  C14_28 
+ROOT
+HETATM    1  N1  UNL     1       1.620   1.864   2.005  1.00  0.00    -0.351 N 
+ATOM      2  H1  UNL     1       1.899   2.649   2.593  1.00  0.00     0.163 HD
+HETATM    3  C3  UNL     1       2.616   1.073   1.383  1.00  0.00     0.252 C 
+HETATM    4  O2  UNL     1       2.257   0.117   0.668  1.00  0.00    -0.270 OA
+ENDROOT
+BRANCH   1   5
+HETATM    5  C2  UNL     1       0.205   1.577   1.821  1.00  0.00     0.206 C 
+BRANCH   5   6
+HETATM    6  C1  UNL     1      -0.644   2.537   2.569  1.00  0.00     0.204 C 
+HETATM    7  O1  UNL     1      -0.104   3.410   3.217  1.00  0.00    -0.290 OA
+BRANCH   6   8
+HETATM    8  C12 UNL     1      -2.103   2.444   2.536  1.00  0.00     0.387 C 
+HETATM    9  F4  UNL     1      -2.559   2.227   3.844  1.00  0.00    -0.211 F 
+BRANCH   8  10
+HETATM   10  O5  UNL     1      -2.606   1.401   1.760  1.00  0.00    -0.277 OA
+BRANCH  10  11
+HETATM   11  C13 UNL     1      -3.583   1.571   0.776  1.00  0.00     0.270 C 
+HETATM   12  O6  UNL     1      -3.994   2.755   0.624  1.00  0.00    -0.264 OA
+BRANCH  11  13
+HETATM   13  C14 UNL     1      -4.111   0.450  -0.043  1.00  0.00     0.049 C 
+HETATM   14  C15 UNL     1      -4.739  -0.575   0.882  1.00  0.00     0.024 C 
+HETATM   15  C16 UNL     1      -5.354  -1.663   0.059  1.00  0.00    -0.013 C 
+HETATM   16  C17 UNL     1      -6.462  -1.072  -0.782  1.00  0.00     0.009 C 
+HETATM   17  C21 UNL     1      -4.308  -2.323  -0.808  1.00  0.00     0.009 C 
+HETATM   18  C18 UNL     1      -5.871  -0.065  -1.732  1.00  0.00    -0.013 C 
+HETATM   19  C19 UNL     1      -4.840  -0.753  -2.601  1.00  0.00     0.009 C 
+HETATM   20  C23 UNL     1      -5.171   1.020  -0.970  1.00  0.00     0.024 C 
+HETATM   21  C20 UNL     1      -3.734  -1.277  -1.717  1.00  0.00    -0.013 C 
+HETATM   22  C22 UNL     1      -3.073  -0.205  -0.899  1.00  0.00     0.024 C 
+ENDBRANCH  11  13
+ENDBRANCH  10  11
+ENDBRANCH   8  10
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+ENDBRANCH   1   5
+BRANCH   3  23
+HETATM   23  C4  UNL     1       4.033   1.390   1.590  1.00  0.00     0.141 C 
+HETATM   24  C5  UNL     1       4.829   0.250   2.203  1.00  0.00     0.068 C 
+HETATM   25  C6  UNL     1       4.858  -0.965   1.348  1.00  0.00     0.129 C 
+HETATM   26  N2  UNL     1       5.036  -0.657  -0.059  1.00  0.00    -0.352 N 
+HETATM   27  C7  UNL     1       5.518  -1.703  -0.890  1.00  0.00     0.228 C 
+HETATM   28  C10 UNL     1       4.752   0.616  -0.633  1.00  0.00     0.129 C 
+HETATM   29  O4  UNL     1       5.774  -2.850  -0.416  1.00  0.00    -0.273 OA
+HETATM   30  C11 UNL     1       4.704   1.769   0.297  1.00  0.00     0.068 C 
+BRANCH  23  31
+HETATM   31  O3  UNL     1       4.122   2.484   2.488  1.00  0.00    -0.380 OA
+ATOM     32  H3  UNL     1       5.040   2.689   2.622  1.00  0.00     0.211 HD
+ENDBRANCH  23  31
+BRANCH  27  33
+HETATM   33  C8  UNL     1       5.723  -1.443  -2.341  1.00  0.00     0.220 C 
+BRANCH  33  34
+HETATM   34  C9  UNL     1       6.212  -2.729  -2.989  1.00  0.00     0.396 C 
+HETATM   35  F1  UNL     1       5.249  -3.684  -2.793  1.00  0.00    -0.171 F 
+HETATM   36  F2  UNL     1       7.364  -3.182  -2.370  1.00  0.00    -0.171 F 
+HETATM   37  F3  UNL     1       6.420  -2.486  -4.324  1.00  0.00    -0.171 F 
+ENDBRANCH  33  34
+ENDBRANCH  27  33
+ENDBRANCH   3  23
+TORSDOF 10

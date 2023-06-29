@@ -1,0 +1,35 @@
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_9  and  O1_10 
+REMARK    2  A    between atoms: O1_10  and  C4_11 
+REMARK       I    between atoms: C4_11  and  N3_13 
+REMARK    3  A    between atoms: N3_13  and  C5_15 
+ROOT
+HETATM    1  N1  UNL     1       6.184  -0.503  -2.076  1.00  0.00    -0.380 N 
+ATOM      2  H11 UNL     1       5.753  -0.835  -2.939  1.00  0.00     0.158 HD
+ATOM      3  H12 UNL     1       7.138  -0.148  -2.142  1.00  0.00     0.158 HD
+HETATM    4  C1  UNL     1       5.533  -0.537  -0.945  1.00  0.00     0.141 C 
+HETATM    5  N2  UNL     1       6.134  -0.074   0.258  1.00  0.00    -0.341 N 
+ATOM      6  H2  UNL     1       7.096  -0.345   0.461  1.00  0.00     0.167 HD
+HETATM    7  C2  UNL     1       5.511   0.674   1.102  1.00  0.00     0.139 C 
+HETATM    8  S1  UNL     1       3.829   1.224   0.882  1.00  0.00    -0.081 SA
+HETATM    9  C3  UNL     1       2.866  -0.194   0.294  1.00  0.00     0.270 C 
+HETATM   10  S2  UNL     1       3.862  -1.159  -0.829  1.00  0.00    -0.051 SA
+ENDROOT
+BRANCH   9  11
+HETATM   11  O1  UNL     1       1.644   0.248  -0.315  1.00  0.00    -0.276 OA
+BRANCH  11  12
+HETATM   12  C4  UNL     1       0.415  -0.109   0.217  1.00  0.00     0.362 C 
+HETATM   13  O2  UNL     1       0.416  -0.830   1.246  1.00  0.00    -0.238 OA
+HETATM   14  N3  UNL     1      -0.818   0.301  -0.346  1.00  0.00    -0.332 N 
+ATOM     15  H3  UNL     1      -0.796   0.887  -1.181  1.00  0.00     0.165 HD
+BRANCH  14  16
+HETATM   16  C5  UNL     1      -2.093  -0.061   0.192  1.00  0.00     0.086 C 
+HETATM   17  C6  UNL     1      -2.940   1.132   0.581  1.00  0.00     0.025 C 
+HETATM   18  C7  UNL     1      -4.367   0.750   0.261  1.00  0.00     0.002 C 
+HETATM   19  C8  UNL     1      -4.339  -0.670  -0.229  1.00  0.00     0.002 C 
+HETATM   20  C9  UNL     1      -2.952  -0.819  -0.776  1.00  0.00     0.025 C 
+ENDBRANCH  14  16
+ENDBRANCH  11  12
+ENDBRANCH   9  11
+TORSDOF 3

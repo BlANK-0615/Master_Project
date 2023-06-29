@@ -1,0 +1,41 @@
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  O1_4 
+REMARK    2  A    between atoms: O1_4  and  C4_5 
+REMARK    3  A    between atoms: C5_10  and  C6_11 
+REMARK    4  A    between atoms: C6_11  and  C7_12 
+REMARK    5  A    between atoms: C7_12  and  N3_13 
+REMARK    6  A    between atoms: C7_12  and  C8_17 
+ROOT
+HETATM    1  C4  UNL     1      -0.297   0.993  -0.045  1.00  0.00     0.182 A 
+HETATM    2  N1  UNL     1      -0.067   2.224   0.395  1.00  0.00    -0.278 N 
+ATOM      3  H1  UNL     1      -0.621   2.905   0.914  1.00  0.00     0.189 HD
+HETATM    4  N2  UNL     1       1.154   2.224  -0.099  1.00  0.00    -0.298 N 
+ATOM      5  H2  UNL     1       1.920   2.898  -0.118  1.00  0.00     0.186 HD
+HETATM    6  C5  UNL     1       0.980   0.965  -0.572  1.00  0.00     0.080 A 
+ENDROOT
+BRANCH   6   7
+HETATM    7  C6  UNL     1       1.839   0.013  -1.320  1.00  0.00     0.103 C 
+BRANCH   7   8
+HETATM    8  C7  UNL     1       2.409  -1.052  -0.374  1.00  0.00     0.250 C 
+BRANCH   8   9
+HETATM    9  N3  UNL     1       3.213  -0.433   0.671  1.00  0.00    -0.069 N 
+ATOM     10  H33 UNL     1       3.947   0.160   0.283  1.00  0.00     0.275 HD
+ATOM     11  H32 UNL     1       2.690   0.282   1.177  1.00  0.00     0.275 HD
+ATOM     12  H31 UNL     1       3.592  -1.141   1.300  1.00  0.00     0.275 HD
+ENDBRANCH   8   9
+BRANCH   8  13
+HETATM   13  C8  UNL     1       3.291  -1.965  -1.137  1.00  0.00     0.264 C 
+HETATM   14  O2  UNL     1       2.814  -2.569  -2.085  1.00  0.00    -0.305 OA
+ENDBRANCH   8  13
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+BRANCH   1  15
+HETATM   15  O1  UNL     1      -1.303   0.048  -0.048  1.00  0.00    -0.329 OA
+BRANCH  15  16
+HETATM   16  C2  UNL     1      -2.566   0.242   0.544  1.00  0.00     0.122 C 
+HETATM   17  C1  UNL     1      -3.695   0.261  -0.433  1.00  0.00     0.040 C 
+HETATM   18  C3  UNL     1      -2.851  -0.773   1.619  1.00  0.00     0.040 C 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6

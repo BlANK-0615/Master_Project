@@ -1,0 +1,37 @@
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C4_4 
+REMARK    2  A    between atoms: C6_8  and  N2_9 
+REMARK    3  A    between atoms: N2_9  and  N3_11 
+REMARK    4  A    between atoms: C7_13  and  C8_14 
+ROOT
+HETATM    1  C8  UNL     1       4.522  -0.230  -0.051  1.00  0.00     0.083 C 
+HETATM    2 CL1  UNL     1       3.800  -1.811  -0.198  1.00  0.00    -0.080 Cl
+HETATM    3  C9  UNL     1       5.742   0.004  -0.485  1.00  0.00     0.137 C 
+HETATM    4 CL2  UNL     1       6.635  -1.299  -1.215  1.00  0.00    -0.070 Cl
+HETATM    5  C10 UNL     1       6.365   1.286  -0.381  1.00  0.00     0.113 C 
+HETATM    6  N4  UNL     1       6.857   2.322  -0.286  1.00  0.00    -0.190 NA
+ENDROOT
+BRANCH   1   7
+HETATM    7  C7  UNL     1       3.739   0.829   0.565  1.00  0.00     0.133 C 
+HETATM    8  N3  UNL     1       2.553   0.671   1.006  1.00  0.00    -0.308 N 
+ATOM      9  H3  UNL     1       2.105   1.490   1.418  1.00  0.00     0.186 HD
+BRANCH   8  10
+HETATM   10  N2  UNL     1       1.808  -0.500   0.984  1.00  0.00    -0.280 N 
+ATOM     11  H2  UNL     1       2.271  -1.394   1.146  1.00  0.00     0.189 HD
+BRANCH  10  12
+HETATM   12  C6  UNL     1       0.522  -0.472   0.758  1.00  0.00     0.163 A 
+HETATM   13  N1  UNL     1      -0.336  -1.490   0.702  1.00  0.00    -0.344 N 
+HETATM   14  C5  UNL     1      -1.587  -1.234   0.462  1.00  0.00     0.105 A 
+ATOM     15  H1  UNL     1      -0.018  -2.449   0.844  1.00  0.00     0.167 HD
+HETATM   16  C4  UNL     1      -1.963   0.070   0.277  1.00  0.00     0.005 A 
+HETATM   17  S1  UNL     1      -0.467   0.884   0.462  1.00  0.00    -0.056 SA
+BRANCH  16  18
+HETATM   18  C2  UNL     1      -3.334   0.615  -0.011  1.00  0.00     0.019 C 
+HETATM   19  C1  UNL     1      -4.293   0.327   1.105  1.00  0.00     0.015 C 
+HETATM   20  C3  UNL     1      -3.831   0.127  -1.357  1.00  0.00     0.015 C 
+ENDBRANCH  16  18
+ENDBRANCH  10  12
+ENDBRANCH   8  10
+ENDBRANCH   1   7
+TORSDOF 4
