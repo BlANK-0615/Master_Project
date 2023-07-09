@@ -49,7 +49,7 @@ def dock_decoy(decoy_file, docker_command, receptor_folder, docked_folder, paddi
         # compute coordinates
         coordinates = get_coordinates(example_crystal_ligand, padding)
         print(coordinates)
-        with open("Toco_02_bind_site.txt", "a") as bind_site_file:
+        with open("Toco_05_bind_site.txt", "a") as bind_site_file:
             coordinates_str = ' '.join(map(str, coordinates))  # convert tuple elements to str and join with space
             bind_site_file.write(f"{filename} {coordinates_str}\n")  # use f-string
 
@@ -58,7 +58,7 @@ def dock_decoy(decoy_file, docker_command, receptor_folder, docked_folder, paddi
         os.makedirs(docked_folder, exist_ok=True)
         origin_path = decoy_file.split('.')[0]
         shutil.move(f"{origin_path}_out.pdbqt", docked_folder)
-        with open("Toco_02_progess_rate.txt", "a") as progress_file:
+        with open("Toco_05_progess_rate.txt", "a") as progress_file:
             progress_file.write(f"{filename} docking finished\n")
         # shutil.copy(receptor_file, os.path.join(docked_folder, f"{pdb_code}_docked"))
         
@@ -83,14 +83,13 @@ def dock_decoy(decoy_file, docker_command, receptor_folder, docked_folder, paddi
 #Parallel(n_jobs=32)(delayed(convert_pdb_to_pdbqt)(pdb_file) for pdb_file in tqdm(pdb_files, total=len(pdb_files)))
 
 
-
 # run the main function
 start=timeit.default_timer()
 
 docker_command = "/home/s2331261/Master_Project/3_Docking/SCORCH/utils/gwovina-1.0/build/linux/release/gwovina"
 receptor_folder = "/home/s2331261/Master_Project/z1_3p_dataset/dock_source/all_receptors_ligands"
-decoy_folder = "/home/s2331261/Master_Project/3_Docking/decoy_qdbqt_02"
-docked_folder = "Toco_docked_02"
+decoy_folder = "/home/s2331261/Master_Project/3_Docking/decoy_qdbqt_05"
+docked_folder = "Toco_docked_05"
 padding = 12
 decoy_files = [os.path.join(decoy_folder, file) for file in os.listdir(decoy_folder)]
 # generate a list of all decoy files
