@@ -12,7 +12,6 @@ df = pd.read_csv('/home/s2331261/Master_Project/3_Docking/a8_broken_deocy.csv', 
 
 os.makedirs('a9_files', exist_ok=True)
 
-# 创建一个空的DataFrame来存储错误信息
 # error_df = pd.DataFrame(columns=['name', 'smile', 'error'])
 # pdb_list_df = pd.DataFrame(columns=['name', 'smile', 'filename'])
 
