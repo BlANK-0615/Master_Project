@@ -1,0 +1,47 @@
+MODEL 15
+REMARK VINA RESULT: -6.153380919      2.558      7.404
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C3_3  and  C4_4 
+REMARK    2  A    between atoms: C4_4  and  O1_5 
+REMARK    3  A    between atoms: O1_5  and  C5_6 
+REMARK    4  A    between atoms: C8_9  and  S1_10 
+REMARK    5  A    between atoms: S1_10  and  C9_13 
+REMARK    6  A    between atoms: C9_13  and  C10_14 
+REMARK    7  A    between atoms: C10_14  and  C11_15 
+ROOT
+HETATM    1  C1  UNL     1       3.788  54.483  85.638  1.00  0.00     0.112 C 
+HETATM    2  C2  UNL     1       2.558  54.696  84.843  1.00  0.00    -0.109 C 
+HETATM    3  C3  UNL     1       1.556  54.875  84.193  1.00  0.00    -0.080 C 
+ENDROOT
+BRANCH   3   4
+HETATM    4  C4  UNL     1       0.331  55.098  83.426  1.00  0.00     0.269 C 
+BRANCH   4   5
+HETATM    5  O1  UNL     1       0.354  56.356  82.842  1.00  0.00    -0.340 OA
+BRANCH   5   6
+HETATM    6  C5  UNL     1       0.214  57.563  83.518  1.00  0.00     0.070 A 
+HETATM    7  C6  UNL     1      -0.872  57.842  84.297  1.00  0.00     0.038 A 
+HETATM    8  C7  UNL     1      -0.957  59.048  84.943  1.00  0.00     0.026 A 
+HETATM    9  C8  UNL     1       0.022  60.014  84.841  1.00  0.00     0.059 A 
+HETATM   10  C12 UNL     1       1.105  59.733  84.062  1.00  0.00     0.026 A 
+HETATM   11  C13 UNL     1       1.202  58.507  83.401  1.00  0.00     0.038 A 
+BRANCH   9  12
+HETATM   12  S1  UNL     1      -0.093  61.558  85.640  1.00  0.00     0.175 S 
+HETATM   13  O2  UNL     1       1.306  62.197  85.468  1.00  0.00    -0.223 OA
+HETATM   14  O3  UNL     1      -0.273  61.335  87.093  1.00  0.00    -0.223 OA
+BRANCH  12  15
+HETATM   15  C9  UNL     1      -1.221  62.643  84.882  1.00  0.00     0.146 C 
+BRANCH  15  16
+HETATM   16  C10 UNL     1      -1.529  63.939  85.489  1.00  0.00     0.026 C 
+BRANCH  16  17
+HETATM   17  C11 UNL     1      -2.329  64.938  84.732  1.00  0.00     0.087 C 
+HETATM   18  S2  UNL     1      -3.133  64.426  83.245  1.00  0.00    -0.098 SA
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  12  15
+ENDBRANCH   9  12
+ENDBRANCH   5   6
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+TORSDOF 7
+ENDMDL

@@ -1,0 +1,43 @@
+MODEL 2
+REMARK VINA RESULT: -3.447953448      2.077      3.553
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N2_4  and  C1_6
+REMARK    2  A    between atoms: C1_6  and  C2_7
+REMARK    3  A    between atoms: C5_10  and  N3_11
+REMARK    4  A    between atoms: N3_11  and  C6_14
+REMARK    5  A    between atoms: C6_14  and  C7_15
+REMARK    6  A    between atoms: C7_15  and  O1_16
+ROOT
+HETATM    1  C2  UNL     1     -23.284 -18.340 -19.759  1.00  0.00     0.061 A
+HETATM    2  C3  UNL     1     -23.395 -17.805 -21.145  1.00  0.00    -0.020 A
+HETATM    3  C4  UNL     1     -22.610 -16.759 -20.991  1.00  0.00     0.003 A
+HETATM    4  C5  UNL     1     -22.382 -17.149 -19.565  1.00  0.00     0.217 A
+ENDROOT
+BRANCH   4   5
+HETATM    5  N3  UNL     1     -20.996 -17.485 -19.397  1.00  0.00    -0.065 N
+ATOM      6  H32 UNL     1     -20.708 -18.230 -20.031  1.00  0.00     0.278 HD
+ATOM      7  H31 UNL     1     -20.384 -16.745 -19.741  1.00  0.00     0.278 HD
+BRANCH   5   8
+HETATM    8  C6  UNL     1     -20.707 -17.822 -17.994  1.00  0.00     0.259 C
+BRANCH   8   9
+HETATM    9  C7  UNL     1     -19.486 -18.750 -18.032  1.00  0.00     0.191 C
+BRANCH   9  10
+HETATM   10  O1  UNL     1     -18.877 -18.518 -19.264  1.00  0.00    -0.399 OA
+ATOM     11  H1  UNL     1     -17.943 -18.595 -19.106  1.00  0.00     0.209 HD
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+ENDBRANCH   5   8
+ENDBRANCH   4   5
+BRANCH   1  12
+HETATM   12  C1  UNL     1     -24.612 -18.271 -19.042  1.00  0.00     0.149 C
+BRANCH  12  13
+HETATM   13  N2  UNL     1     -24.721 -19.391 -18.149  1.00  0.00    -0.342 N
+HETATM   14  N1  UNL     1     -23.897 -19.522 -17.241  1.00  0.00    -0.349 N
+ATOM     15  H12 UNL     1     -23.152 -18.834 -17.139  1.00  0.00     0.176 HD
+ATOM     16  H11 UNL     1     -23.975 -20.317 -16.607  1.00  0.00     0.176 HD
+ATOM     17  H2  UNL     1     -25.473 -20.070 -18.265  1.00  0.00     0.179 HD
+ENDBRANCH  12  13
+ENDBRANCH   1  12
+TORSDOF 6
+ENDMDL

@@ -1,0 +1,41 @@
+MODEL 5
+REMARK VINA RESULT: -5.869422383      3.314      7.269
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_4
+REMARK    2  A    between atoms: C4_5  and  C5_6
+REMARK    3  A    between atoms: C5_6  and  N1_7
+REMARK       I    between atoms: N1_7  and  C6_9
+REMARK       I    between atoms: C6_9  and  N2_11
+REMARK    4  A    between atoms: N2_11  and  C8_13
+ROOT
+HETATM    1  N1  UNL     1     -46.859  12.773  -4.831  1.00  0.00    -0.343 N
+ATOM      2  H1  UNL     1     -47.070  13.400  -4.054  1.00  0.00     0.164 HD
+HETATM    3  C6  UNL     1     -47.547  11.551  -4.823  1.00  0.00     0.318 C
+HETATM    4  O1  UNL     1     -47.376  10.704  -5.715  1.00  0.00    -0.247 OA
+HETATM    5  N2  UNL     1     -48.476  11.228  -3.789  1.00  0.00    -0.334 N
+HETATM    6  C7  UNL     1     -48.702  12.195  -2.730  1.00  0.00     0.154 C
+ENDROOT
+BRANCH   1   7
+HETATM    7  C5  UNL     1     -45.899  13.265  -5.778  1.00  0.00     0.130 C
+BRANCH   7   8
+HETATM    8  C4  UNL     1     -46.321  14.554  -6.354  1.00  0.00     0.018 A
+HETATM    9  C3  UNL     1     -45.409  15.608  -6.832  1.00  0.00     0.014 A
+HETATM   10  C12 UNL     1     -46.154  14.857  -7.835  1.00  0.00    -0.037 A
+HETATM   11  C13 UNL     1     -45.464  13.935  -8.782  1.00  0.00     0.015 C
+HETATM   12  C14 UNL     1     -47.367  15.559  -8.479  1.00  0.00     0.015 C
+BRANCH   9  13
+HETATM   13  C2  UNL     1     -43.941  15.608  -6.609  1.00  0.00     0.059 C
+HETATM   14  C1  UNL     1     -43.666  16.129  -5.210  1.00  0.00     0.022 C
+HETATM   15 BR1  UNL     1     -42.825  16.491  -7.815  1.00  0.00    -0.091 Br
+ENDBRANCH   9  13
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   5  16
+HETATM   16  C8  UNL     1     -49.184   9.992  -3.767  1.00  0.00     0.088 C
+HETATM   17  C9  UNL     1     -50.126   9.891  -2.569  1.00  0.00     0.025 C
+HETATM   18  C10 UNL     1     -51.217   9.500  -3.516  1.00  0.00     0.004 C
+HETATM   19  C11 UNL     1     -50.376   9.895  -4.711  1.00  0.00     0.025 C
+ENDBRANCH   5  16
+TORSDOF 4
+ENDMDL

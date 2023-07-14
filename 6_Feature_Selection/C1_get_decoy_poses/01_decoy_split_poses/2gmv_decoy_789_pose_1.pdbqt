@@ -1,0 +1,39 @@
+MODEL 1
+REMARK VINA RESULT: -4.808832843      0.000      0.000
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C2_5
+REMARK    2  A    between atoms: C2_5  and  C3_6
+REMARK    3  A    between atoms: C3_6  and  C4_7
+REMARK    4  A    between atoms: C4_7  and  N2_9
+ROOT
+HETATM    1  C3  UNL     1      24.014   0.759  26.099  1.00  0.00     0.014 C
+HETATM    2  C6  UNL     1      25.387   0.436  25.583  1.00  0.00     0.041 C
+HETATM    3  C7  UNL     1      26.137   1.582  25.011  1.00  0.00     0.233 C
+HETATM    4  N3  UNL     1      26.087   2.765  25.853  1.00  0.00    -0.075 N
+ATOM      5  H31 UNL     1      26.630   3.529  25.450  1.00  0.00     0.277 HD
+ATOM      6  H32 UNL     1      26.615   2.629  26.714  1.00  0.00     0.277 HD
+HETATM    7  C8  UNL     1      24.747   3.169  26.124  1.00  0.00     0.233 C
+HETATM    8  C9  UNL     1      23.877   2.105  26.705  1.00  0.00     0.041 C
+ENDROOT
+BRANCH   1   9
+HETATM    9  C2  UNL     1      23.642  -0.323  27.094  1.00  0.00     0.243 C
+BRANCH   9  10
+HETATM   10  N1  UNL     1      23.975  -0.044  28.448  1.00  0.00    -0.078 N
+HETATM   11  C1  UNL     1      22.958  -0.735  29.263  1.00  0.00     0.267 C
+ATOM     12  H12 UNL     1      24.053   0.952  28.652  1.00  0.00     0.276 HD
+ATOM     13  H11 UNL     1      24.933  -0.295  28.692  1.00  0.00     0.276 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+BRANCH   1  14
+HETATM   14  C4  UNL     1      23.052   0.536  24.916  1.00  0.00     0.189 C
+HETATM   15  C5  UNL     1      22.832  -0.906  24.619  1.00  0.00     0.040 C
+BRANCH  14  16
+HETATM   16  N2  UNL     1      21.801   1.198  25.122  1.00  0.00    -0.075 N
+ATOM     17  H23 UNL     1      21.526   1.176  26.104  1.00  0.00     0.274 HD
+ATOM     18  H22 UNL     1      21.891   2.207  25.004  1.00  0.00     0.274 HD
+ATOM     19  H21 UNL     1      21.070   0.815  24.522  1.00  0.00     0.274 HD
+ENDBRANCH  14  16
+ENDBRANCH   1  14
+TORSDOF 4
+ENDMDL

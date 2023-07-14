@@ -1,0 +1,43 @@
+MODEL 3
+REMARK VINA RESULT: -7.379557770      1.399      2.227
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O1_1  and  C1_3 
+REMARK    2  A    between atoms: C2_5  and  C3_6 
+REMARK    3  A    between atoms: C3_6  and  O3_7 
+REMARK    4  A    between atoms: O3_7  and  P1_8 
+REMARK    5  A    between atoms: C4_12  and  O7_13 
+REMARK    6  A    between atoms: C5_15  and  O8_16 
+ROOT
+HETATM    1  C1  UNL     1     -34.423 -19.337  -5.780  1.00  0.00     0.288 C 
+HETATM    2  O2  UNL     1     -35.704 -19.861  -5.641  1.00  0.00    -0.349 OA
+HETATM    3  C2  UNL     1     -35.712 -20.616  -4.475  1.00  0.00     0.180 C 
+HETATM    4  C4  UNL     1     -34.442 -20.415  -3.729  1.00  0.00     0.182 C 
+HETATM    5  C5  UNL     1     -34.007 -19.079  -4.337  1.00  0.00     0.204 C 
+ENDROOT
+BRANCH   3   6
+HETATM    6  C3  UNL     1     -36.905 -20.240  -3.568  1.00  0.00     0.217 C 
+BRANCH   6   7
+HETATM    7  O3  UNL     1     -38.048 -20.800  -4.085  1.00  0.00    -0.280 OA
+BRANCH   7   8
+HETATM    8  P1  UNL     1     -38.159 -22.301  -4.257  1.00  0.00     0.422 P 
+HETATM    9  O4  UNL     1     -38.239 -23.831  -4.449  1.00  0.00    -0.617 OA
+HETATM   10  O5  UNL     1     -38.898 -21.980  -5.717  1.00  0.00    -0.617 OA
+HETATM   11  O6  UNL     1     -39.103 -22.397  -2.926  1.00  0.00    -0.617 OA
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   3   6
+BRANCH   4  12
+HETATM   12  O7  UNL     1     -33.535 -21.378  -4.170  1.00  0.00    -0.390 OA
+ATOM     13  H7  UNL     1     -32.848 -20.929  -4.648  1.00  0.00     0.210 HD
+ENDBRANCH   4  12
+BRANCH   1  14
+HETATM   14  O1  UNL     1     -33.629 -20.338  -6.318  1.00  0.00    -0.369 OA
+ATOM     15  H1  UNL     1     -33.696 -20.270  -7.263  1.00  0.00     0.212 HD
+ENDBRANCH   1  14
+BRANCH   5  16
+HETATM   16  O8  UNL     1     -32.655 -18.870  -4.190  1.00  0.00    -0.388 OA
+ATOM     17  H8  UNL     1     -32.154 -19.675  -4.141  1.00  0.00     0.210 HD
+ENDBRANCH   5  16
+TORSDOF 6
+ENDMDL

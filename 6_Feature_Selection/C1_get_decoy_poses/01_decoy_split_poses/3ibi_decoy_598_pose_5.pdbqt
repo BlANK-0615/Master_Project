@@ -1,0 +1,51 @@
+MODEL 5
+REMARK VINA RESULT: -5.268610558      1.167      1.490
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3
+REMARK    2  A    between atoms: C3_3  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  N1_6
+REMARK    5  A    between atoms: C5_5  and  C6_10
+REMARK    6  A    between atoms: C5_5  and  C9_13
+REMARK    7  A    between atoms: C6_10  and  C7_11
+REMARK    8  A    between atoms: C9_13  and  N2_14
+ROOT
+HETATM    1  C5  UNL     1      -4.525   2.751  13.912  1.00  0.00     0.143 C
+ENDROOT
+BRANCH   1   2
+HETATM    2  C4  UNL     1      -5.728   3.146  14.690  1.00  0.00     0.044 C
+BRANCH   2   3
+HETATM    3  C3  UNL     1      -5.624   2.611  16.099  1.00  0.00     0.029 C
+BRANCH   3   4
+HETATM    4  C2  UNL     1      -6.955   2.119  16.583  1.00  0.00    -0.037 C
+HETATM    5  C1  UNL     1      -7.118   0.904  17.064  1.00  0.00     0.007 C
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   6
+HETATM    6  N1  UNL     1      -4.019   1.518  14.434  1.00  0.00    -0.069 N
+ATOM      7  H13 UNL     1      -3.041   1.364  14.186  1.00  0.00     0.275 HD
+ATOM      8  H12 UNL     1      -3.906   1.542  15.447  1.00  0.00     0.275 HD
+ATOM      9  H11 UNL     1      -4.624   0.757  14.127  1.00  0.00     0.275 HD
+ENDBRANCH   1   6
+BRANCH   1  10
+HETATM   10  C6  UNL     1      -3.511   3.871  13.943  1.00  0.00     0.066 C
+BRANCH  10  11
+HETATM   11  C7  UNL     1      -4.115   5.224  13.891  1.00  0.00    -0.034 C
+HETATM   12  C8  UNL     1      -3.411   6.279  14.280  1.00  0.00     0.007 C
+ENDBRANCH  10  11
+ENDBRANCH   1  10
+BRANCH   1  13
+HETATM   13  C9  UNL     1      -4.827   2.502  12.445  1.00  0.00     0.168 C
+BRANCH  13  14
+HETATM   14  N2  UNL     1      -3.882   1.605  11.824  1.00  0.00    -0.349 N
+HETATM   15  C10 UNL     1      -2.689   1.931  11.328  1.00  0.00     0.108 A
+HETATM   16  C11 UNL     1      -2.127   0.784  10.834  1.00  0.00     0.106 A
+HETATM   17  N3  UNL     1      -3.009  -0.202  11.050  1.00  0.00    -0.361 N
+HETATM   18  C12 UNL     1      -4.094   0.293  11.659  1.00  0.00     0.182 A
+ATOM     19  H3  UNL     1      -2.874  -1.179  10.790  1.00  0.00     0.166 HD
+ENDBRANCH  13  14
+ENDBRANCH   1  13
+TORSDOF 8
+ENDMDL

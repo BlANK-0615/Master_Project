@@ -1,0 +1,44 @@
+MODEL 3
+REMARK VINA RESULT: -5.918861801      3.782      7.714
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  O2_4
+REMARK    2  A    between atoms: O2_4  and  C3_5
+REMARK    3  A    between atoms: C3_5  and  C4_6
+REMARK    4  A    between atoms: C9_12  and  C10_13
+REMARK    5  A    between atoms: C10_13  and  C11_14
+REMARK    6  A    between atoms: C11_14  and  O4_17
+ROOT
+HETATM    1  C4  UNL     1       0.415  25.067  10.826  1.00  0.00     0.083 C
+HETATM    2  C5  UNL     1       1.908  25.193  10.808  1.00  0.00     0.049 C
+HETATM    3  O3  UNL     1      -0.073  25.507   9.586  1.00  0.00    -0.373 OA
+HETATM    4  C6  UNL     1      -0.235  26.855   9.621  1.00  0.00     0.119 C
+HETATM    5  C7  UNL     1       0.575  27.528   8.568  1.00  0.00     0.039 C
+HETATM    6  C8  UNL     1       0.052  27.329  11.029  1.00  0.00     0.039 C
+HETATM    7  C9  UNL     1      -0.126  26.077  11.835  1.00  0.00     0.027 C
+ENDROOT
+BRANCH   1   8
+HETATM    8  C3  UNL     1      -0.041  23.688  11.068  1.00  0.00     0.216 C
+BRANCH   8   9
+HETATM    9  O2  UNL     1       0.207  22.679  10.194  1.00  0.00    -0.319 OA
+BRANCH   9  10
+HETATM   10  C2  UNL     1       0.943  21.556  10.144  1.00  0.00     0.254 C
+HETATM   11  C1  UNL     1       2.442  21.647   9.959  1.00  0.00     0.126 C
+HETATM   12  O1  UNL     1       0.393  20.455  10.249  1.00  0.00    -0.266 OA
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+ENDBRANCH   1   8
+BRANCH   7  13
+HETATM   13  C10 UNL     1      -1.488  25.752  12.266  1.00  0.00     0.044 C
+BRANCH  13  14
+HETATM   14  C11 UNL     1      -1.783  25.515  13.702  1.00  0.00     0.051 C
+HETATM   15  C12 UNL     1      -1.698  24.135  14.240  1.00  0.00     0.045 C
+HETATM   16  C13 UNL     1      -0.771  26.346  14.542  1.00  0.00     0.045 C
+BRANCH  14  17
+HETATM   17  O4  UNL     1      -3.083  25.979  14.019  1.00  0.00    -0.391 OA
+ATOM     18  H4  UNL     1      -3.145  26.179  14.946  1.00  0.00     0.210 HD
+ENDBRANCH  14  17
+ENDBRANCH  13  14
+ENDBRANCH   7  13
+TORSDOF 6
+ENDMDL

@@ -22,3 +22,5 @@ python3 /home/s2331261/Master_Project/6_Feature_Selection/03_calculate_ecifs.py 
 -pdbqts /home/s2331261/Master_Project/6_Feature_Selection/6ekq \
 -pdbs /home/s2331261/Master_Project/6_Feature_Selection/6ekq \
 -out /home/s2331261/Master_Project/6_Feature_Selection/6ekq_test.csv
+
+scp -r /home/s2331261/Master_Project/3_Docking/A6_B_Atom s2331261@executor.bch.ed.ac.uk:/home/s2331261/Msater_Project/dock_job/

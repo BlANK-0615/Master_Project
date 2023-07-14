@@ -1,0 +1,43 @@
+MODEL 5
+REMARK VINA RESULT: -5.241920781      2.922      5.072
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: S1_2  and  N1_3
+REMARK    2  A    between atoms: S1_2  and  C2_6
+REMARK    3  A    between atoms: C2_6  and  C3_7
+REMARK    4  A    between atoms: N2_9  and  N3_10
+REMARK    5  A    between atoms: C5_13  and  C6_14
+REMARK    6  A    between atoms: C6_14  and  O1_15
+ROOT
+HETATM    1  C3  UNL     1     -12.415  25.844  40.821  1.00  0.00     0.148 C
+HETATM    2  C4  UNL     1     -12.281  24.976  39.562  1.00  0.00     0.148 C
+HETATM    3  N2  UNL     1     -12.710  25.868  38.526  1.00  0.00    -0.204 NA
+HETATM    4  C5  UNL     1     -13.150  27.061  39.199  1.00  0.00     0.238 C
+HETATM    5  O2  UNL     1     -12.278  27.138  40.292  1.00  0.00    -0.360 OA
+ENDROOT
+BRANCH   1   6
+HETATM    6  C2  UNL     1     -11.276  25.481  41.718  1.00  0.00     0.117 C
+BRANCH   6   7
+HETATM    7  S1  UNL     1     -10.926  26.697  42.936  1.00  0.00    -0.136 SA
+HETATM    8  C1  UNL     1     -12.412  27.095  43.859  1.00  0.00     0.101 C
+BRANCH   7   9
+HETATM    9  N1  UNL     1     -10.468  28.155  42.115  1.00  0.00    -0.383 NA
+ATOM     10  H12 UNL     1     -11.169  28.343  41.399  1.00  0.00     0.163 HD
+ATOM     11  H11 UNL     1     -10.481  28.890  42.821  1.00  0.00     0.163 HD
+ENDBRANCH   7   9
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   3  12
+HETATM   12  N3  UNL     1     -13.655  25.350  37.669  1.00  0.00    -0.361 NA
+ATOM     13  H32 UNL     1     -14.493  25.022  38.148  1.00  0.00     0.171 HD
+ATOM     14  H31 UNL     1     -13.336  24.563  37.103  1.00  0.00     0.171 HD
+ENDBRANCH   3  12
+BRANCH   4  15
+HETATM   15  C6  UNL     1     -12.984  28.240  38.271  1.00  0.00     0.213 C
+BRANCH  15  16
+HETATM   16  O1  UNL     1     -14.227  28.475  37.683  1.00  0.00    -0.397 OA
+ATOM     17  H1  UNL     1     -14.081  28.555  36.748  1.00  0.00     0.209 HD
+ENDBRANCH  15  16
+ENDBRANCH   4  15
+TORSDOF 6
+ENDMDL

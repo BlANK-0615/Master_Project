@@ -1,0 +1,50 @@
+MODEL 10
+REMARK VINA RESULT: -5.271231067      3.896      4.924
+REMARK  9 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3 
+REMARK    2  A    between atoms: C3_3  and  C4_4 
+REMARK    3  A    between atoms: C4_4  and  C5_5 
+REMARK    4  A    between atoms: C5_5  and  C6_6 
+REMARK    5  A    between atoms: C6_6  and  C7_7 
+REMARK    6  A    between atoms: C7_7  and  C8_8 
+REMARK    7  A    between atoms: C8_8  and  O1_9 
+REMARK    8  A    between atoms: O1_9  and  S1_10 
+REMARK    9  A    between atoms: S1_10  and  N1_11 
+ROOT
+HETATM    1  C8  UNL     1      -5.757   3.118  14.502  1.00  0.00     0.192 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C7  UNL     1      -5.988   4.507  15.060  1.00  0.00     0.028 C 
+BRANCH   2   3
+HETATM    3  C6  UNL     1      -4.938   5.472  14.495  1.00  0.00     0.002 C 
+BRANCH   3   4
+HETATM    4  C5  UNL     1      -3.645   4.741  14.468  1.00  0.00     0.000 C 
+BRANCH   4   5
+HETATM    5  C4  UNL     1      -2.472   5.505  13.971  1.00  0.00     0.000 C 
+BRANCH   5   6
+HETATM    6  C3  UNL     1      -2.844   6.965  13.844  1.00  0.00    -0.000 C 
+BRANCH   6   7
+HETATM    7  C2  UNL     1      -1.597   7.756  14.230  1.00  0.00    -0.005 C 
+HETATM    8  C1  UNL     1      -1.947   8.572  15.441  1.00  0.00     0.005 C 
+ENDBRANCH   6   7
+ENDBRANCH   5   6
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   9
+HETATM    9  O1  UNL     1      -5.747   2.246  15.607  1.00  0.00    -0.260 OA
+BRANCH   9  10
+HETATM   10  S1  UNL     1      -4.537   1.107  15.311  1.00  0.00     0.355 S 
+HETATM   11  O2  UNL     1      -3.348   1.425  16.175  1.00  0.00    -0.176 OA
+HETATM   12  O3  UNL     1      -4.999  -0.283  15.661  1.00  0.00    -0.176 OA
+BRANCH  10  13
+HETATM   13  N1  UNL     1      -4.119   1.171  13.622  1.00  0.00    -0.306 N 
+ATOM     14  H12 UNL     1      -4.641   1.681  12.909  1.00  0.00     0.171 HD
+ATOM     15  H11 UNL     1      -3.275   0.618  13.476  1.00  0.00     0.171 HD
+ENDBRANCH  10  13
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 9
+ENDMDL

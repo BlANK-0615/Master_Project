@@ -1,0 +1,45 @@
+MODEL 10
+REMARK VINA RESULT: -3.853459775      3.546      5.938
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C2_5 
+REMARK    2  A    between atoms: C2_5  and  C3_6 
+REMARK    3  A    between atoms: C3_6  and  C4_7 
+REMARK    4  A    between atoms: C4_7  and  C5_8 
+REMARK    5  A    between atoms: C5_8  and  C6_9 
+REMARK    6  A    between atoms: C6_9  and  N2_10 
+REMARK    7  A    between atoms: C6_9  and  C7_14 
+ROOT
+HETATM    1  C5  UNL     1     -25.371 -19.848 -18.747  1.00  0.00     0.044 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C4  UNL     1     -24.497 -18.664 -18.718  1.00  0.00     0.004 C 
+BRANCH   2   3
+HETATM    3  C3  UNL     1     -23.885 -18.301 -20.052  1.00  0.00     0.027 C 
+BRANCH   3   4
+HETATM    4  C2  UNL     1     -22.606 -17.555 -19.948  1.00  0.00     0.231 C 
+BRANCH   4   5
+HETATM    5  N1  UNL     1     -22.643 -16.432 -20.851  1.00  0.00    -0.079 N 
+HETATM    6  C1  UNL     1     -22.825 -16.801 -22.228  1.00  0.00     0.266 C 
+ATOM      7  H12 UNL     1     -21.810 -15.854 -20.741  1.00  0.00     0.276 HD
+ATOM      8  H11 UNL     1     -23.356 -15.762 -20.561  1.00  0.00     0.276 HD
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   9
+HETATM    9  C6  UNL     1     -26.324 -19.867 -17.581  1.00  0.00     0.283 C 
+BRANCH   9  10
+HETATM   10  N2  UNL     1     -26.057 -21.052 -16.749  1.00  0.00    -0.065 N 
+ATOM     11  H23 UNL     1     -26.181 -21.922 -17.267  1.00  0.00     0.275 HD
+ATOM     12  H22 UNL     1     -25.067 -21.153 -16.528  1.00  0.00     0.275 HD
+ATOM     13  H21 UNL     1     -26.638 -21.016 -15.911  1.00  0.00     0.275 HD
+ENDBRANCH   9  10
+BRANCH   9  14
+HETATM   14  C7  UNL     1     -27.733 -19.941 -18.010  1.00  0.00     0.204 C 
+HETATM   15  O1  UNL     1     -28.399 -18.960 -18.367  1.00  0.00    -0.646 OA
+HETATM   16  O2  UNL     1     -28.395 -21.186 -18.029  1.00  0.00    -0.646 OA
+ENDBRANCH   9  14
+ENDBRANCH   1   9
+TORSDOF 7
+ENDMDL

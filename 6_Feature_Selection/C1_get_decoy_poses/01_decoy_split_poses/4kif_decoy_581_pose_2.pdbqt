@@ -1,0 +1,43 @@
+MODEL 2
+REMARK VINA RESULT: -4.667695267      1.755      2.208
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_1  and  N2_4
+REMARK    2  A    between atoms: N2_4  and  C1_5
+REMARK    3  A    between atoms: C1_5  and  C2_6
+REMARK    4  A    between atoms: C6_10  and  C7_11
+REMARK    5  A    between atoms: C7_11  and  C8_12
+REMARK    6  A    between atoms: C8_12  and  N3_13
+ROOT
+HETATM    1  C2  UNL     1      11.404 103.200 159.578  1.00  0.00     0.176 C
+HETATM    2  C3  UNL     1      10.353 102.357 160.279  1.00  0.00     0.039 C
+HETATM    3  C4  UNL     1      10.460 100.962 159.698  1.00  0.00     0.005 C
+HETATM    4  C5  UNL     1      11.886 100.463 159.919  1.00  0.00     0.032 C
+HETATM    5  C6  UNL     1      12.894 101.495 159.427  1.00  0.00     0.124 C
+HETATM    6  O1  UNL     1      12.215 102.472 158.743  1.00  0.00    -0.374 OA
+ENDROOT
+BRANCH   5   7
+HETATM    7  C7  UNL     1      13.863 100.758 158.533  1.00  0.00     0.059 C
+BRANCH   7   8
+HETATM    8  C8  UNL     1      13.179  99.701 157.697  1.00  0.00     0.232 C
+BRANCH   8   9
+HETATM    9  N3  UNL     1      12.467 100.259 156.572  1.00  0.00    -0.079 N
+ATOM     10  H33 UNL     1      12.230  99.536 155.893  1.00  0.00     0.274 HD
+ATOM     11  H32 UNL     1      11.526 100.547 156.840  1.00  0.00     0.274 HD
+ATOM     12  H31 UNL     1      12.973 101.026 156.129  1.00  0.00     0.274 HD
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+ENDBRANCH   5   7
+BRANCH   1  13
+HETATM   13  C1  UNL     1      10.688 104.269 158.850  1.00  0.00     0.212 C
+BRANCH  13  14
+HETATM   14  N2  UNL     1      10.000 103.940 157.866  1.00  0.00    -0.347 NA
+BRANCH  14  15
+HETATM   15  N1  UNL     1       9.304 103.706 156.855  1.00  0.00    -0.281 N
+ATOM     16  H12 UNL     1      10.026 102.989 156.782  1.00  0.00     0.191 HD
+ATOM     17  H11 UNL     1       8.690 103.577 156.051  1.00  0.00     0.191 HD
+ENDBRANCH  14  15
+ENDBRANCH  13  14
+ENDBRANCH   1  13
+TORSDOF 6
+ENDMDL

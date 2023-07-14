@@ -1,0 +1,43 @@
+MODEL 1
+REMARK VINA RESULT: -5.596555462      0.000      0.000
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  O1_3
+REMARK    2  A    between atoms: C2_2  and  C3_5
+REMARK    3  A    between atoms: C2_2  and  N3_12
+REMARK    4  A    between atoms: C4_6  and  N1_7
+REMARK    5  A    between atoms: N1_7  and  N2_9
+REMARK    6  A    between atoms: N3_12  and  S1_14
+ROOT
+HETATM    1  C1  UNL     1     117.596  40.786  63.026  1.00  0.00     0.087 C
+HETATM    2  C2  UNL     1     118.733  40.224  63.818  1.00  0.00     0.207 C
+ENDROOT
+BRANCH   2   3
+HETATM    3  O1  UNL     1     119.965  40.806  63.439  1.00  0.00    -0.360 OA
+ATOM      4  H1  UNL     1     120.511  40.188  62.968  1.00  0.00     0.213 HD
+ENDBRANCH   2   3
+BRANCH   2   5
+HETATM    5  C3  UNL     1     118.533  40.554  65.244  1.00  0.00    -0.021 C
+HETATM    6  C4  UNL     1     118.369  40.815  66.407  1.00  0.00     0.030 C
+BRANCH   6   7
+HETATM    7  N1  UNL     1     118.172  41.103  67.762  1.00  0.00    -0.265 N
+ATOM      8  H1  UNL     1     117.993  42.073  68.021  1.00  0.00     0.197 HD
+BRANCH   7   9
+HETATM    9  N2  UNL     1     118.205  40.161  68.776  1.00  0.00    -0.338 N
+ATOM     10  H22 UNL     1     117.310  39.767  69.064  1.00  0.00     0.177 HD
+ATOM     11  H21 UNL     1     119.056  39.843  69.241  1.00  0.00     0.177 HD
+ENDBRANCH   7   9
+ENDBRANCH   6   7
+ENDBRANCH   2   5
+BRANCH   2  12
+HETATM   12  N3  UNL     1     118.781  38.806  63.684  1.00  0.00    -0.257 N
+ATOM     13  H3  UNL     1     118.108  38.165  64.102  1.00  0.00     0.179 HD
+BRANCH  12  14
+HETATM   14  S1  UNL     1     120.123  38.317  62.727  1.00  0.00     0.207 S
+HETATM   15  O2  UNL     1     119.968  38.845  61.318  1.00  0.00    -0.578 OA
+HETATM   16  O3  UNL     1     121.446  38.709  63.304  1.00  0.00    -0.578 OA
+HETATM   17  O4  UNL     1     120.076  36.618  62.645  1.00  0.00    -0.578 OA
+ENDBRANCH  12  14
+ENDBRANCH   2  12
+TORSDOF 6
+ENDMDL

@@ -1,0 +1,45 @@
+MODEL 5
+REMARK VINA RESULT: -4.983362530      3.055      5.204
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_1  and  O1_4
+REMARK    2  A    between atoms: O1_4  and  C1_5
+REMARK    3  A    between atoms: C1_5  and  C2_6
+REMARK    4  A    between atoms: S1_8  and  C4_9
+REMARK    5  A    between atoms: C4_9  and  C5_10
+REMARK    6  A    between atoms: C5_10  and  O2_11
+REMARK    7  A    between atoms: C7_14  and  O3_15
+ROOT
+HETATM    1  C2  UNL     1     -11.833  26.831  39.919  1.00  0.00     0.050 C
+HETATM    2  C3  UNL     1     -12.280  27.601  41.131  1.00  0.00     0.072 C
+HETATM    3  S1  UNL     1     -12.111  26.439  42.472  1.00  0.00    -0.215 SA
+HETATM    4  C6  UNL     1     -11.336  25.118  41.523  1.00  0.00     0.095 C
+HETATM    5  C7  UNL     1     -12.069  25.371  40.210  1.00  0.00     0.133 C
+ENDROOT
+BRANCH   1   6
+HETATM    6  C1  UNL     1     -12.678  27.240  38.735  1.00  0.00     0.208 C
+BRANCH   6   7
+HETATM    7  O1  UNL     1     -13.845  26.501  38.692  1.00  0.00    -0.287 OA
+BRANCH   7   8
+HETATM    8  N1  UNL     1     -13.832  25.617  37.694  1.00  0.00    -0.311 N
+ATOM      9  H12 UNL     1     -14.154  25.832  36.751  1.00  0.00     0.184 HD
+ATOM     10  H11 UNL     1     -13.465  24.714  37.995  1.00  0.00     0.184 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   5  11
+HETATM   11  O3  UNL     1     -11.617  24.596  39.188  1.00  0.00    -0.394 OA
+ATOM     12  H3  UNL     1     -10.743  24.271  39.372  1.00  0.00     0.210 HD
+ENDBRANCH   5  11
+BRANCH   3  13
+HETATM   13  C4  UNL     1     -11.008  27.040  43.720  1.00  0.00     0.089 C
+BRANCH  13  14
+HETATM   14  C5  UNL     1     -10.007  25.913  43.998  1.00  0.00     0.173 C
+BRANCH  14  15
+HETATM   15  O2  UNL     1      -9.559  25.948  45.312  1.00  0.00    -0.400 OA
+ATOM     16  H2  UNL     1      -9.676  25.108  45.739  1.00  0.00     0.209 HD
+ENDBRANCH  14  15
+ENDBRANCH  13  14
+ENDBRANCH   3  13
+TORSDOF 7
+ENDMDL

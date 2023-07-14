@@ -1,0 +1,41 @@
+MODEL 4
+REMARK VINA RESULT: -7.416261432      3.168      5.710
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C4_6  and  C5_7 
+REMARK    2  A    between atoms: C5_7  and  O1_8 
+REMARK    3  A    between atoms: O1_8  and  P1_9 
+REMARK    4  A    between atoms: C6_13  and  C7_14 
+REMARK    5  A    between atoms: C8_16  and  O6_17 
+ROOT
+HETATM    1  C1  UNL     1     -31.285  -6.558  -2.504  1.00  0.00     0.071 C 
+HETATM    2  C2  UNL     1     -30.375  -6.583  -3.697  1.00  0.00     0.039 A 
+HETATM    3  N1  UNL     1     -29.708  -5.446  -3.954  1.00  0.00    -0.367 N 
+ATOM      4  H1  UNL     1     -29.842  -4.636  -3.348  1.00  0.00     0.165 HD
+HETATM    5  C3  UNL     1     -28.872  -5.361  -4.994  1.00  0.00     0.098 A 
+HETATM    6  C4  UNL     1     -28.714  -6.483  -5.802  1.00  0.00    -0.003 A 
+HETATM    7  C6  UNL     1     -29.390  -7.675  -5.564  1.00  0.00     0.046 A 
+HETATM    8  C8  UNL     1     -30.252  -7.714  -4.467  1.00  0.00     0.101 A 
+ENDROOT
+BRANCH   6   9
+HETATM    9  C5  UNL     1     -27.784  -6.431  -6.969  1.00  0.00     0.223 C 
+BRANCH   9  10
+HETATM   10  O1  UNL     1     -28.244  -5.442  -7.841  1.00  0.00    -0.278 OA
+BRANCH  10  11
+HETATM   11  P1  UNL     1     -27.117  -4.239  -8.092  1.00  0.00     0.422 P 
+HETATM   12  O2  UNL     1     -27.514  -3.039  -7.263  1.00  0.00    -0.617 OA
+HETATM   13  O3  UNL     1     -25.561  -4.682  -7.636  1.00  0.00    -0.617 OA
+HETATM   14  O4  UNL     1     -27.175  -3.759  -9.720  1.00  0.00    -0.617 OA
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+ENDBRANCH   6   9
+BRANCH   7  15
+HETATM   15  C7  UNL     1     -29.211  -8.833  -6.426  1.00  0.00     0.273 C 
+HETATM   16  O5  UNL     1     -29.071 -10.000  -5.999  1.00  0.00    -0.301 OA
+ENDBRANCH   7  15
+BRANCH   8  17
+HETATM   17  O6  UNL     1     -30.956  -8.840  -4.157  1.00  0.00    -0.358 OA
+ATOM     18  H6  UNL     1     -30.623  -9.697  -4.394  1.00  0.00     0.217 HD
+ENDBRANCH   8  17
+TORSDOF 5
+ENDMDL

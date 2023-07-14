@@ -1,0 +1,39 @@
+MODEL 3
+REMARK VINA RESULT: -4.894194274      4.091      6.461
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N1_2  and  C2_4
+REMARK    2  A    between atoms: C2_4  and  N2_6
+REMARK    3  A    between atoms: N2_6  and  C3_8
+REMARK    4  A    between atoms: C7_12  and  C8_13
+ROOT
+HETATM    1  C3  UNL     1      13.572  -8.040 -10.137  1.00  0.00     0.040 A
+HETATM    2  C4  UNL     1      13.284  -7.148 -11.104  1.00  0.00     0.037 A
+HETATM    3  C5  UNL     1      12.362  -6.087 -10.903  1.00  0.00    -0.050 A
+HETATM    4  C6  UNL     1      12.107  -5.178 -12.015  1.00  0.00     0.049 C
+HETATM    5  C7  UNL     1      11.721  -5.921  -9.712  1.00  0.00    -0.013 A
+HETATM    6  C11 UNL     1      12.042  -6.856  -8.737  1.00  0.00     0.020 A
+HETATM    7  C12 UNL     1      12.910  -7.866  -8.907  1.00  0.00    -0.035 A
+HETATM    8  C13 UNL     1      13.222  -8.850  -7.835  1.00  0.00     0.050 C
+ENDROOT
+BRANCH   1   9
+HETATM    9  N2  UNL     1      14.522  -9.069 -10.269  1.00  0.00    -0.333 N
+ATOM     10  H2  UNL     1      14.128  -9.976 -10.516  1.00  0.00     0.168 HD
+BRANCH   9  11
+HETATM   11  C2  UNL     1      15.887  -9.066 -10.124  1.00  0.00     0.171 C
+HETATM   12  S1  UNL     1      16.640 -10.516 -10.555  1.00  0.00    -0.041 SA
+BRANCH  11  13
+HETATM   13  N1  UNL     1      16.797  -8.092  -9.685  1.00  0.00    -0.371 N
+HETATM   14  C1  UNL     1      17.770  -7.474 -10.612  1.00  0.00     0.148 C
+ATOM     15  H1  UNL     1      16.787  -7.804  -8.706  1.00  0.00     0.161 HD
+ENDBRANCH  11  13
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+BRANCH   5  16
+HETATM   16  C8  UNL     1      10.781  -4.836  -9.485  1.00  0.00     0.124 C
+HETATM   17  C9  UNL     1       9.566  -4.845 -10.386  1.00  0.00     0.057 C
+HETATM   18  C10 UNL     1      11.392  -3.467  -9.329  1.00  0.00     0.057 C
+HETATM   19  F1  UNL     1      10.224  -5.088  -8.201  1.00  0.00    -0.238 F
+ENDBRANCH   5  16
+TORSDOF 4
+ENDMDL

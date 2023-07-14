@@ -1,0 +1,42 @@
+MODEL 4
+REMARK VINA RESULT: -5.993499852      1.600      3.198
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3
+REMARK    2  A    between atoms: C4_4  and  C5_5
+REMARK    3  A    between atoms: C12_14  and  O2_15
+REMARK    4  A    between atoms: C12_14  and  C13_17
+REMARK    5  A    between atoms: C13_17  and  O3_18
+ROOT
+HETATM    1  C3  UNL     1      52.858  38.840  64.601  1.00  0.00     0.047 C
+HETATM    2  C4  UNL     1      54.272  39.262  64.545  1.00  0.00     0.000 C
+HETATM    3  C7  UNL     1      54.603  40.160  65.697  1.00  0.00     0.015 C
+HETATM    4  C8  UNL     1      56.000  40.732  65.450  1.00  0.00     0.012 C
+HETATM    5  C9  UNL     1      53.655  41.308  65.812  1.00  0.00     0.285 C
+HETATM    6  N1  UNL     1      52.310  41.058  65.568  1.00  0.00     0.161 N
+HETATM    7  C10 UNL     1      51.875  39.812  65.106  1.00  0.00     0.261 C
+HETATM    8  C11 UNL     1      51.129  39.269  66.339  1.00  0.00     0.210 C
+HETATM    9  O1  UNL     1      50.408  40.436  66.685  1.00  0.00    -0.327 OA
+HETATM   10  C12 UNL     1      51.442  41.363  66.718  1.00  0.00     0.393 C
+ENDROOT
+BRANCH  10  11
+HETATM   11  O2  UNL     1      52.113  41.231  67.916  1.00  0.00    -0.340 OA
+ATOM     12  H2  UNL     1      52.934  41.708  67.915  1.00  0.00     0.215 HD
+ENDBRANCH  10  11
+BRANCH  10  13
+HETATM   13  C13 UNL     1      50.930  42.785  66.625  1.00  0.00     0.268 C
+BRANCH  13  14
+HETATM   14  O3  UNL     1      50.063  42.954  65.573  1.00  0.00    -0.393 OA
+ATOM     15  H3  UNL     1      49.175  42.704  65.799  1.00  0.00     0.209 HD
+ENDBRANCH  13  14
+ENDBRANCH  10  13
+BRANCH   1  16
+HETATM   16  C2  UNL     1      52.627  37.533  65.309  1.00  0.00    -0.030 C
+HETATM   17  C1  UNL     1      53.357  36.450  65.116  1.00  0.00     0.007 C
+ENDBRANCH   1  16
+BRANCH   2  18
+HETATM   18  C5  UNL     1      54.644  39.970  63.258  1.00  0.00     0.001 C
+HETATM   19  C6  UNL     1      53.441  40.257  62.398  1.00  0.00     0.005 C
+ENDBRANCH   2  18
+TORSDOF 5
+ENDMDL

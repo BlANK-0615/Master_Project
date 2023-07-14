@@ -1,0 +1,41 @@
+MODEL 1
+REMARK VINA RESULT: -5.524845943      0.000      0.000
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3
+REMARK    2  A    between atoms: C3_3  and  N1_4
+REMARK    3  A    between atoms: C3_3  and  C6_11
+REMARK       I    between atoms: N1_4  and  C4_6
+REMARK    4  A    between atoms: C4_6  and  C5_8
+ROOT
+HETATM    1  C6  UNL     1     124.714 105.342 -44.871  1.00  0.00     0.209 C
+HETATM    2  C7  UNL     1     124.394 105.964 -43.527  1.00  0.00     0.041 C
+HETATM    3  C8  UNL     1     124.647 107.438 -43.873  1.00  0.00     0.018 C
+HETATM    4  C9  UNL     1     123.952 108.371 -42.956  1.00  0.00     0.007 C
+HETATM    5  C10 UNL     1     122.566 108.510 -43.521  1.00  0.00     0.002 C
+HETATM    6  C11 UNL     1     122.631 108.116 -44.975  1.00  0.00     0.033 C
+HETATM    7  C12 UNL     1     123.978 107.522 -45.229  1.00  0.00     0.190 C
+HETATM    8  N2  UNL     1     123.923 106.180 -45.753  1.00  0.00    -0.064 N
+ATOM      9  H21 UNL     1     122.970 105.839 -45.878  1.00  0.00     0.278 HD
+ATOM     10  H22 UNL     1     124.214 106.120 -46.729  1.00  0.00     0.278 HD
+ENDROOT
+BRANCH   1  11
+HETATM   11  C3  UNL     1     124.289 103.897 -44.905  1.00  0.00     0.114 C
+BRANCH  11  12
+HETATM   12  C2  UNL     1     124.025 103.426 -46.295  1.00  0.00     0.023 C
+HETATM   13  C1  UNL     1     124.195 101.967 -46.512  1.00  0.00     0.007 C
+ENDBRANCH  11  12
+BRANCH  11  14
+HETATM   14  N1  UNL     1     125.269 103.106 -44.205  1.00  0.00    -0.352 N
+HETATM   15  C4  UNL     1     125.047 102.583 -42.912  1.00  0.00     0.251 C
+HETATM   16  O1  UNL     1     123.952 102.821 -42.359  1.00  0.00    -0.271 OA
+ATOM     17  H1  UNL     1     126.161 102.915 -44.662  1.00  0.00     0.163 HD
+BRANCH  15  18
+HETATM   18  C5  UNL     1     126.065 101.781 -42.228  1.00  0.00     0.269 C
+HETATM   19 CL1  UNL     1     125.371 100.417 -41.326  1.00  0.00    -0.098 Cl
+HETATM   20 CL2  UNL     1     127.014 102.743 -41.073  1.00  0.00    -0.098 Cl
+ENDBRANCH  15  18
+ENDBRANCH  11  14
+ENDBRANCH   1  11
+TORSDOF 4
+ENDMDL

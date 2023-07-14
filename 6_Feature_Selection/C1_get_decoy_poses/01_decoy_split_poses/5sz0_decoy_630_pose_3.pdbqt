@@ -1,0 +1,41 @@
+MODEL 3
+REMARK VINA RESULT: -5.692726166      2.539      3.394
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3
+REMARK    2  A    between atoms: C2_2  and  C11_13
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  O1_6
+REMARK    5  A    between atoms: C11_13  and  N1_14
+ROOT
+HETATM    1  C3  UNL     1      -1.099   1.856  82.038  1.00  0.00    -0.097 C
+HETATM    2  C4  UNL     1      -0.824   2.733  81.262  1.00  0.00    -0.068 C
+ENDROOT
+BRANCH   1   3
+HETATM    3  C2  UNL     1      -1.459   0.788  82.968  1.00  0.00     0.089 C
+HETATM    4  C1  UNL     1      -0.741  -0.467  82.563  1.00  0.00     0.025 C
+BRANCH   3   5
+HETATM    5  C11 UNL     1      -1.087   1.228  84.367  1.00  0.00     0.289 C
+BRANCH   5   6
+HETATM    6  N1  UNL     1      -2.263   0.921  85.195  1.00  0.00     0.089 N
+HETATM    7  C12 UNL     1      -2.917   2.161  85.495  1.00  0.00     0.272 C
+HETATM    8  C13 UNL     1      -3.470   2.099  86.878  1.00  0.00     0.032 C
+HETATM    9  C14 UNL     1      -2.770   0.938  87.508  1.00  0.00     0.032 C
+HETATM   10  C15 UNL     1      -1.898   0.346  86.455  1.00  0.00     0.272 C
+ENDBRANCH   5   6
+ENDBRANCH   3   5
+ENDBRANCH   1   3
+BRANCH   2  11
+HETATM   11  C5  UNL     1      -0.515   3.813  80.290  1.00  0.00     0.121 C
+HETATM   12  C6  UNL     1      -1.582   4.886  80.352  1.00  0.00     0.051 C
+HETATM   13  C7  UNL     1      -1.602   5.570  81.699  1.00  0.00     0.004 C
+HETATM   14  C8  UNL     1      -0.215   5.949  82.163  1.00  0.00     0.000 C
+HETATM   15  C9  UNL     1       0.765   4.807  82.099  1.00  0.00     0.004 C
+HETATM   16  C10 UNL     1       0.840   4.344  80.652  1.00  0.00     0.051 C
+BRANCH  11  17
+HETATM   17  O1  UNL     1      -0.473   3.335  78.986  1.00  0.00    -0.378 OA
+ATOM     18  H1  UNL     1       0.369   2.946  78.781  1.00  0.00     0.211 HD
+ENDBRANCH  11  17
+ENDBRANCH   2  11
+TORSDOF 5
+ENDMDL

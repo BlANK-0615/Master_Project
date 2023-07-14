@@ -1,0 +1,42 @@
+MODEL 5
+REMARK VINA RESULT: -5.336247099      1.632      2.548
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_3  and  C3_4
+REMARK    2  A    between atoms: C3_4  and  N2_5
+REMARK    3  A    between atoms: N2_5  and  N3_6
+REMARK    4  A    between atoms: N2_5  and  C4_9
+REMARK    5  A    between atoms: C5_14  and  N6_15
+ROOT
+HETATM    1  N1  UNL     1     -23.629 -18.701 -39.124  1.00  0.00    -0.197 NA
+HETATM    2  C1  UNL     1     -23.592 -17.883 -38.292  1.00  0.00     0.060 C
+HETATM    3  C2  UNL     1     -23.531 -16.823 -37.249  1.00  0.00     0.146 C
+ENDROOT
+BRANCH   3   4
+HETATM    4  C3  UNL     1     -23.538 -15.512 -37.953  1.00  0.00     0.181 C
+BRANCH   4   5
+HETATM    5  N2  UNL     1     -24.851 -15.058 -38.288  1.00  0.00    -0.128 N
+BRANCH   5   6
+HETATM    6  N3  UNL     1     -25.831 -15.257 -37.268  1.00  0.00    -0.329 N
+ATOM      7  H32 UNL     1     -25.604 -14.906 -36.338  1.00  0.00     0.177 HD
+ATOM      8  H31 UNL     1     -26.685 -15.718 -37.581  1.00  0.00     0.177 HD
+ENDBRANCH   5   6
+BRANCH   5   9
+HETATM    9  C4  UNL     1     -25.298 -14.475 -39.493  1.00  0.00     0.728 A
+HETATM   10  N4  UNL     1     -26.575 -14.662 -39.987  1.00  0.00    -0.116 N
+HETATM   11  N5  UNL     1     -26.714 -14.002 -41.121  1.00  0.00    -0.117 N
+ATOM     12  H4  UNL     1     -27.301 -15.226 -39.543  1.00  0.00     0.206 HD
+HETATM   13  C5  UNL     1     -25.555 -13.378 -41.398  1.00  0.00     0.705 A
+ATOM     14  H5  UNL     1     -27.559 -13.969 -41.691  1.00  0.00     0.206 HD
+HETATM   15  N7  UNL     1     -24.718 -13.680 -40.396  1.00  0.00    -0.018 N
+ATOM     16  H7  UNL     1     -23.757 -13.345 -40.330  1.00  0.00     0.203 HD
+BRANCH  13  17
+HETATM   17  N6  UNL     1     -25.384 -12.645 -42.446  1.00  0.00    -0.233 N
+ATOM     18  H62 UNL     1     -25.388 -11.632 -42.559  1.00  0.00     0.174 HD
+ATOM     19  H61 UNL     1     -25.215 -13.034 -43.374  1.00  0.00     0.174 HD
+ENDBRANCH  13  17
+ENDBRANCH   5   9
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+TORSDOF 5
+ENDMDL

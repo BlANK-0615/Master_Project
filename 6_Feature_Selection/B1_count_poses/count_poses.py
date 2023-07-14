@@ -40,7 +40,7 @@ def count_conformations(file):
     return count
 
 def main():
-    folder_path = "/home/s2331261/Master_Project/4_Docking/A3_Toco_docked/Toco_docked_04" # 你的文件夹路径
+    folder_path = "/home/s2331261/Master_Project/4_Docking/A1_deep_docked/deep_decoy_docked" # 你的文件夹路径
     filenames = os.listdir(folder_path) # 得到文件夹中所有文件的名称
     pdbqt_files = [file for file in filenames if file.endswith('.pdbqt')] # 选取所有的pdbqt文件
 

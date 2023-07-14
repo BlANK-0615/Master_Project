@@ -1,0 +1,47 @@
+MODEL 4
+REMARK VINA RESULT: -4.939351768      6.914      8.944
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  C3_3
+REMARK    2  A    between atoms: C3_3  and  C4_4
+REMARK    3  A    between atoms: C4_4  and  C5_5
+REMARK    4  A    between atoms: C5_5  and  O1_6
+REMARK    5  A    between atoms: C5_5  and  C6_8
+REMARK    6  A    between atoms: C6_8  and  C7_9
+REMARK    7  A    between atoms: C7_9  and  N1_10
+REMARK    8  A    between atoms: N1_10  and  C8_12
+ROOT
+HETATM    1  C6  UNL     1      59.315  12.599  22.160  1.00  0.00     0.051 C
+ENDROOT
+BRANCH   1   2
+HETATM    2  C5  UNL     1      58.581  13.810  21.522  1.00  0.00     0.120 C
+BRANCH   2   3
+HETATM    3  C4  UNL     1      57.133  13.466  21.693  1.00  0.00     0.035 C
+BRANCH   3   4
+HETATM    4  C3  UNL     1      56.581  12.350  20.919  1.00  0.00     0.029 C
+BRANCH   4   5
+HETATM    5  C2  UNL     1      56.984  12.305  19.514  1.00  0.00    -0.037 C
+HETATM    6  C1  UNL     1      56.218  11.832  18.551  1.00  0.00     0.007 C
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+BRANCH   2   7
+HETATM    7  O1  UNL     1      59.052  14.974  22.029  1.00  0.00    -0.396 OA
+ATOM      8  H1  UNL     1      59.515  14.968  22.858  1.00  0.00     0.210 HD
+ENDBRANCH   2   7
+ENDBRANCH   1   2
+BRANCH   1   9
+HETATM    9  C7  UNL     1      60.427  12.108  21.261  1.00  0.00     0.116 C
+BRANCH   9  10
+HETATM   10  N1  UNL     1      61.661  12.348  21.920  1.00  0.00    -0.417 N
+ATOM     11  H1  UNL     1      62.325  13.038  21.569  1.00  0.00     0.153 HD
+BRANCH  10  12
+HETATM   12  C8  UNL     1      61.936  11.590  23.090  1.00  0.00     0.076 C
+HETATM   13  C9  UNL     1      63.257  10.870  23.017  1.00  0.00     0.024 C
+HETATM   14  C10 UNL     1      63.867  12.026  23.803  1.00  0.00     0.004 C
+HETATM   15  C11 UNL     1      62.476  12.418  24.226  1.00  0.00     0.024 C
+ENDBRANCH  10  12
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 8
+ENDMDL

@@ -1,0 +1,42 @@
+MODEL 20
+REMARK VINA RESULT: -6.399501227      3.756      5.247
+REMARK  5 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P1_2  and  C1_5 
+REMARK    2  A    between atoms: C1_5  and  C2_6 
+REMARK    3  A    between atoms: C1_5  and  P2_16 
+REMARK    4  A    between atoms: C2_6  and  N1_7 
+REMARK    5  A    between atoms: N1_7  and  C3_9 
+ROOT
+HETATM    1  C2  UNL     1      13.338  45.268  45.932  1.00  0.00     0.154 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  C1  UNL     1      14.600  44.483  45.566  1.00  0.00     0.263 C 
+BRANCH   2   3
+HETATM    3  P1  UNL     1      16.040  45.102  46.407  1.00  0.00     0.279 P 
+HETATM    4  O1  UNL     1      16.837  44.006  47.403  1.00  0.00    -0.639 OA
+HETATM    5  O2  UNL     1      17.072  44.735  45.320  1.00  0.00    -0.639 OA
+HETATM    6  O3  UNL     1      16.404  46.679  46.274  1.00  0.00    -0.639 OA
+ENDBRANCH   2   3
+BRANCH   2   7
+HETATM    7  P2  UNL     1      14.410  42.847  45.870  1.00  0.00     0.279 P 
+HETATM    8  O4  UNL     1      14.156  42.615  44.270  1.00  0.00    -0.639 OA
+HETATM    9  O5  UNL     1      13.088  43.222  46.833  1.00  0.00    -0.639 OA
+HETATM   10  O6  UNL     1      14.107  41.391  46.230  1.00  0.00    -0.639 OA
+ENDBRANCH   2   7
+ENDBRANCH   1   2
+BRANCH   1  11
+HETATM   11  N1  UNL     1      13.566  46.531  46.536  1.00  0.00    -0.375 N 
+ATOM     12  H1  UNL     1      13.914  47.322  45.995  1.00  0.00     0.161 HD
+BRANCH  11  13
+HETATM   13  C3  UNL     1      13.290  46.651  47.922  1.00  0.00     0.100 A 
+HETATM   14  C4  UNL     1      13.668  47.771  48.617  1.00  0.00     0.048 A 
+HETATM   15  C5  UNL     1      13.418  47.930  49.979  1.00  0.00     0.005 A 
+HETATM   16  C6  UNL     1      12.764  46.908  50.618  1.00  0.00     0.017 A 
+HETATM   17  C7  UNL     1      12.383  45.782  49.919  1.00  0.00     0.089 A 
+HETATM   18  N2  UNL     1      12.654  45.677  48.589  1.00  0.00    -0.353 N 
+ATOM     19  H2  UNL     1      12.365  44.838  48.087  1.00  0.00     0.166 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+TORSDOF 5
+ENDMDL
