@@ -18,6 +18,10 @@ data representation and training procedures will further enhance MLSF, advance s
 
 ### The scripts and modles in repository
 
+All summarized files for project are in the ##Final_Code_Script
+![image](https://github.com/BlANK-0615/Master_Project/assets/114623510/d5f22fc1-7b9d-48fb-a0ca-40976e49f710)
+
+
 - **Models_file** : including the total nine re-trained XGBoost models in this project. The first six models are models trained only with TocoDecoy, and the last three are models trained after combining TocoDecoy and adjusting hyperparameter search. Compared with the first six models, the performance of the last three models has been greatly improved.
 
 - **utils**：including the scripts for feature extraction and the original XGBoost model from SCORCH1.0 related work(https://github.com/SMVDGroup/SCORCH)
