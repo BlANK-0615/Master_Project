@@ -19,8 +19,7 @@ data representation and training procedures will further enhance MLSF, advance s
 ### The scripts and modles in repository
 
 All summarized files for project are in the **Final_Code_Script**
-![Uploading image.png…]()
-
+![image](https://github.com/BlANK-0615/Master_Project/assets/114623510/0ff33e98-3eb8-4af4-80cc-e7625843734b)
 
 
 - **Models_file** : including the total nine re-trained XGBoost models in this project. The first six models are models trained only with TocoDecoy, and the last three are models trained after combining TocoDecoy and adjusting hyperparameter search. Compared with the first six models, the performance of the last three models has been greatly improved.
